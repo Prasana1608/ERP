@@ -306,7 +306,7 @@ body {
 }
 
 .select-bg-position {
-  background-position: center right 8px;
+  background-position: center right 12px;
 }
 
 .bg-left-arrow {
@@ -513,7 +513,9 @@ body {
   background-position: center left;
 }
 
-
+.bg-left-center-6 {
+  background-position: center left 6px;
+}
 
 /* New Style */
 .border-E6E6E6 {
@@ -696,4 +698,51 @@ body {
 
 .date-icon {
   background-image: url('../images/svg/calender.svg');
+}
+
+
+.drop-down .selected span.value,
+.drop-down .options span.value {
+  display: none;
+}
+
+.dropdown-boxshadow {
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.12);
+}
+
+.bottom-32 {
+  bottom: 2rem;
+}
+
+.right-170 {
+  right: 10.625rem;
+}
+
+.padding-tb-13 {
+  padding-top: 13px;
+  padding-bottom: 13px;
+}
+
+.box-shadow-green {
+  border: 1.5px solid #1ABB97;
+}
+
+.text-color-1ABB97 {
+  color: #1ABB97;
+}
+
+.bottom-20 {
+  bottom: -1.25rem
+}
+
+.verified a {
+  background-color: #1ABB97;
+}
+
+.text-color-EB5D50 {
+  color: #EB5D50
+}
+
+.box-shadow-red {
+  border: 1.5px solid #EB5D50;
 }

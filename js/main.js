@@ -242,5 +242,99 @@ jQuery(document).ready(function ($) {
         $('li.active').prev('li').trigger('click');
     });
 
+
+
+    //TOGGLING NESTED ul
+    $(".drop-down .selected .select-text").click(function () {
+        $(".drop-down .options ul").toggle();
+    });
+    $(".drop-down .options ul li").click(function () {
+        var text = $(this).html();
+        $(".drop-down .selected .select-text span").html(text);
+        $(".drop-down .options ul").hide();
+    });
+
+    $(document).bind('click', function (e) {
+        var $clicked = $(e.target);
+        if (!$clicked.parents().hasClass("drop-down"))
+            $(".drop-down .options ul").hide();
+    });
+
+    //subcategory drop-down
+    $(".sub-category .selected .select-text").click(function () {
+        $(".sub-category .options ul").toggle();
+    });
+    $(".sub-category .options ul li").click(function () {
+        var text = $(this).html();
+        $(".sub-category .selected .select-text span").html(text);
+        $(".sub-category .options ul").hide();
+    });
+
+    $(document).bind('click', function (e) {
+        var $clicked = $(e.target);
+        if (!$clicked.parents().hasClass("sub-category"))
+            $(".sub-category .options ul").hide();
+    });
+
+     //Asset category drop-down
+    $(".asset-category .selected .select-text").click(function () {
+        $(".asset-category .options ul").toggle();
+    });
+    $(".asset-category .options ul li").click(function () {
+        var text = $(this).html();
+        $(".asset-category .selected .select-text span").html(text);
+        $(".asset-category .options ul").hide();
+    });
+
+    $(document).bind('click', function (e) {
+        var $clicked = $(e.target);
+        if (!$clicked.parents().hasClass("asset-category"))
+            $(".asset-category .options ul").hide();
+    });
+    //Asset category drop-down
+    $(".parent-asset .selected .select-text").click(function () {
+        $(".parent-asset .options ul").toggle();
+    });
+    $(".parent-asset .options ul li").click(function () {
+        var text = $(this).html();
+        $(".parent-asset .selected .select-text span").html(text);
+        $(".parent-asset .options ul").hide();
+    });
+
+    $(document).bind('click', function (e) {
+        var $clicked = $(e.target);
+        if (!$clicked.parents().hasClass("parent-asset"))
+            $(".parent-asset .options ul").hide();
+    });
+    //Asset category drop-down
+    $(".department .selected .select-text").click(function () {
+        $(".department .options ul").toggle();
+    });
+    $(".department .options ul li").click(function () {
+        var text = $(this).html();
+        $(".department .selected .select-text span").html(text);
+        $(".department .options ul").hide();
+    });
+
+    $(document).bind('click', function (e) {
+        var $clicked = $(e.target);
+        if (!$clicked.parents().hasClass("department"))
+            $(".department .options ul").hide();
+    });
+    //Asset category drop-down
+    $(".asset-name .selected .select-text").click(function () {
+        $(".asset-name .options ul").toggle();
+    });
+    $(".asset-name .options ul li").click(function () {
+        var text = $(this).html();
+        $(".asset-name .selected .select-text span").html(text);
+        $(".asset-name .options ul").hide();
+    });
+
+    $(document).bind('click', function (e) {
+        var $clicked = $(e.target);
+        if (!$clicked.parents().hasClass("asset-name"))
+            $(".asset-name .options ul").hide();
+    });
 });
 

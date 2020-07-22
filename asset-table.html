@@ -826,7 +826,7 @@
                                 class="modal-overlay top-0 left-0 invisible w-full h-full opacity-0 modal-toggle fixed modal-bg-overlay">
                             </div>
                             <div
-                                class="modal-wrapper modal-transition p-10 absolute z-index-9999 right-0 w-3/5	-ml-64 bg-white h-screen top-0">
+                                class="modal-wrapper modal-transition absolute z-index-9999 right-0 w-3/5	-ml-64 bg-white h-screen top-0">
                                 <div class="modal-header">
                                     <button
                                         class="modal-close modal-toggle absolute top-24 right-24 p-4 focus:outline-none">
@@ -843,14 +843,14 @@
                                         
                                         <div class="flex flex-col flex-1 min-w-0 bg-white height-90 overflow-scroll">
                                                 <div class="contentWrapper">
-                                                    <div class="tabsWrapper">
+                                                    <div class="tabsWrapper pt-10 pr-10 pl-10">
                                                         <ul class="tabs flex">
                                                             <li data-id="contentOne" class="active cursor-pointer text-xs leading-none tracking-normal font-semibold p-2 rounded uppercase bg-color-F2F3F4">Step 1</li>
                                                             <li data-id="contentTwo" class="cursor-pointer ml-3 text-xs leading-none tracking-normal font-semibold p-2 rounded uppercase bg-color-F2F3F4">Step 2</li>
                                                             <li data-id="contentThree" class="cursor-pointer ml-3 text-xs leading-none tracking-normal font-semibold p-2 rounded uppercase bg-color-F2F3F4">Step 3</li>
                                                         </ul>
                                                     </div>
-                                                    <div class="tabContent">
+                                                    <div class="tabContent pb-10 pr-10 pl-10">
                                                         <div class="contentOne active">
                                                             <div class="flex flex-col flex-1 min-w-0 bg-white d-block">
                                                                 <h3 class="text-2xl font-bold leading-none tracking-normal font-212121 pt-5">
@@ -858,36 +858,87 @@
                                                                 <form action="" method="get" class="form-example relative ">
                                                                     <div class="d-flex">
                                                                         <div class="category-list w-2/4 pr-4 d-block">
-                                                                            <div class="category-name d-block pt-8">
+                                                                            <div class="asset-name d-block category-name pt-8">
                                                                                 <h6 class="text-sm font-semibold text-color-2E3032 leading-none tracking-normal pb-3">
-                                                                                    Asset Name
-                                                                                </h6>
-                                                                                <input type="text" name="name"
-                                                                                    class="rounded border-1-5 w-full py-3 px-4 text-black text-sm focus:outline-none placeholder-gray-500::placeholder"
-                                                                                    id="name" placeholder="Eneter Asset Name">
+                                                                                    Asset Name</h6>
+                                                                                <div class="selected d-block">
+                                                                                    <span
+                                                                                        class="select-text block border-1-5 rounded w-full py-3 px-4 text-sm focus:outline-none placeholder-gray-500::placeholder bulk-action bg-no-repeat select-bg-position"><span>
+                                                                                            Select Asset Name</span></span>
+                                                                                </div>
+                                                                                <div class="options d-block relative">
+                                                                                    <ul class="absolute top-0 left-0 w-full list-none py-4 px-2 hidden dropdown-boxshadow bg-white rounded z-50">
+                                                                                        <li>
+                                                                                            <div class="p-2 d-block">
+                                                                                                <input type="text" name="search" id="input-search"
+                                                                                                    class="bg-no-repeat w-full search-bg-position search-bg py-2 pl-8 pr-8 border rounded focus:outline-none dd-font-size placeholder-gray-500 text-gray-700"
+                                                                                                    placeholder="Search">
+                                                                                            </div>
+                                                                                        </li>
+                                                                                        <li
+                                                                                            class="block rounded font-medium px-3 py-2 hover-E3F6FE text-color-313335 pre-font-size leading-none tracking-normal">
+                                                                                            CD Roof Cooling Tower</li>
+                                                                                        <li
+                                                                                            class="block rounded font-medium px-3 py-2 hover-E3F6FE text-color-313335 pre-font-size leading-none tracking-normal">
+                                                                                            KTA Passenger Elevator</li>
+                                                                                        <li
+                                                                                            class="rounded block font-medium px-3 py-2 hover-E3F6FE text-color-313335 pre-font-size leading-none tracking-normal">
+                                                                                            YLS GF SMF</li>
+                                                                                        <li
+                                                                                            class="rounded block font-medium px-3 py-2 hover-E3F6FE text-color-313335 pre-font-size leading-none tracking-normal">
+                                                                                            YLS CCTV Panel</li>
+                                                                                        <li
+                                                                                            class="rounded block font-medium px-3 py-2 hover-E3F6FE text-color-313335 pre-font-size leading-none tracking-normal">
+                                                                                            BTU Meter</li>
+                                                                                        <li
+                                                                                            class="rounded block font-medium px-3 py-2 hover-E3F6FE text-color-313335 pre-font-size leading-none tracking-normal">
+                                                                                            Lift Control Panel</li>
+                                                                                    </ul>
+                                                                                </div>
                                                                             </div>
-                                                                        <div class="category-name pt-8 d-block">
-                                                                            <h6 class="text-sm font-semibold text-color-2E3032 leading-none tracking-normal pb-3">Asset Category
-                                                                            </h6>
-                                                                            <select
-                                                                                class="w-full webkit-appearance select-bg-position select-bg leading-none text-black select-height bg-white py-3 pl-4 pr-6 rounded border-1-5 outline-none pre-font-size bg-no-repeat height-45 ">
-                                                                                <option class="placeholder-gray-500::placeholder">Select Categories</option>
-                                                                                <option>Asset ID</option>
-                                                                                <option>Asset Image</option>
-                                                                                <option>Asset Name</option>
-                                                                                <option>Asset Status</option>
-                                                                                <option>Asset Category</option>
-                                                                                <option>Asset Subcategory</option>
-                                                                                <option>Last Service Date</option>
-                                                                                <option>Parent Asset</option>
-                                                                                <option>Asset Tag</option>
-                                                                                <option>Location</option>
-                                                                                <option>Site</option>
-                                                                                <option>Department</option>
-                                                                                <option>Manufacture Name</option>
-                                                                                <option>Suplier Name</option>
-                                                                                <option>Model Number</option>
-                                                                            </select>
+                                                                        <div class="asset-category d-block category-name pt-8">
+                                                                            <h6 class="text-sm font-semibold text-color-2E3032 leading-none tracking-normal pb-3">
+                                                                                Asset Category</h6>
+                                                                            <div class="selected d-block">
+                                                                                <span
+                                                                                    class="select-text block border-1-5 rounded w-full py-3 px-4   text-sm focus:outline-none placeholder-gray-500::placeholder bulk-action bg-no-repeat select-bg-position"><span class="text-grey-darkest">
+                                                                                        Select Asset Category</span></span>
+                                                                            </div>
+                                                                            <div class="options d-block relative">
+                                                                                <ul class="absolute top-0 left-0 w-full list-none py-4 px-2 hidden dropdown-boxshadow bg-white rounded z-50">
+                                                                                    <li>
+                                                                                        <div class="p-2 d-block">
+                                                                                            <input type="text" name="search" id="input-search"
+                                                                                                class="bg-no-repeat w-full search-bg-position search-bg py-2 pl-8 pr-8 border rounded focus:outline-none dd-font-size placeholder-gray-500 text-gray-700"
+                                                                                                placeholder="Search">
+                                                                                        </div>
+                                                                                    </li>
+                                                                                    <li
+                                                                                        class="block rounded font-medium px-3 py-2 hover-E3F6FE text-color-313335 pre-font-size leading-none tracking-normal">
+                                                                                        Meters</li>
+                                                                                    <li
+                                                                                        class="block rounded font-medium px-3 py-2 hover-E3F6FE text-color-313335 pre-font-size leading-none tracking-normal">
+                                                                                        Electrical Equipments</li>
+                                                                                    <li
+                                                                                        class="rounded block font-medium px-3 py-2 hover-E3F6FE text-color-313335 pre-font-size leading-none tracking-normal">
+                                                                                        HVAC System</li>
+                                                                                    <li
+                                                                                        class="rounded block font-medium px-3 py-2 hover-E3F6FE text-color-313335 pre-font-size leading-none tracking-normal">
+                                                                                        Parking Management System</li>
+                                                                                    <li
+                                                                                        class="rounded block font-medium px-3 py-2 hover-E3F6FE text-color-313335 pre-font-size leading-none tracking-normal">
+                                                                                        Escalators & Elevator System</li>
+                                                                                    <li
+                                                                                        class="rounded block font-medium px-3 py-2 hover-E3F6FE text-color-313335 pre-font-size leading-none tracking-normal">
+                                                                                        Safety & Security</li>
+                                                                                    <li
+                                                                                        class="rounded block font-medium px-3 py-2 hover-E3F6FE text-color-313335 pre-font-size leading-none tracking-normal">
+                                                                                        Pits & Drains</li>
+                                                                                    <li
+                                                                                        class="rounded block font-medium px-3 py-2 hover-E3F6FE text-color-313335 pre-font-size leading-none tracking-normal">
+                                                                                        Motors</li>
+                                                                                </ul>
+                                                                            </div>
                                                                         </div>
                                                                             <div class="category-name d-block pt-8">
                                                                                 <h6 class="text-sm font-semibold text-color-2E3032 leading-none tracking-normal pb-3">
@@ -896,80 +947,195 @@
                                                                                     class="rounded border-1-5 w-full py-3 px-4  text-black text-sm focus:outline-none placeholder-gray-500::placeholder"
                                                                                     id="name" placeholder="Enter Asset Tag">
                                                                             </div>
-                                                                            <div class="category-name pt-8 d-block">
-                                                                                <h6 class="text-sm font-semibold text-color-2E3032 leading-none tracking-normal pb-3">Parent Asset
-                                                                                </h6>
-                                                                                <select
-                                                                                    class="w-full webkit-appearance select-bg-position select-bg leading-none text-black select-height bg-white py-3 pl-4 pr-6 rounded border-1-5 outline-none pre-font-size bg-no-repeat height-45 ">
-                                                                                    <option class="placeholder-gray-500::placeholder">Select Asset ID</option>
-                                                                                    <option>Asset ID</option>
-                                                                                    <option>Asset Image</option>
-                                                                                    <option>Asset Name</option>
-                                                                                    <option>Asset Status</option>
-                                                                                    <option>Asset Category</option>
-                                                                                    <option>Asset Subcategory</option>
-                                                                                    <option>Last Service Date</option>
-                                                                                    <option>Parent Asset</option>
-                                                                                    <option>Asset Tag</option>
-                                                                                    <option>Location</option>
-                                                                                    <option>Site</option>
-                                                                                    <option>Department</option>
-                                                                                    <option>Manufacture Name</option>
-                                                                                    <option>Suplier Name</option>
-                                                                                    <option>Model Number</option>
-                                                                                </select>
+                                                                            <div class="parent-asset d-block category-name pt-8">
+                                                                                <h6 class="text-sm font-semibold text-color-2E3032 leading-none tracking-normal pb-3">
+                                                                                    Parent Asset</h6>
+                                                                                <div class="selected d-block">
+                                                                                    <span
+                                                                                        class="select-text block border-1-5 rounded w-full py-3 px-4  text-black text-sm focus:outline-none placeholder-gray-500::placeholder"><span>
+                                                                                            Select asset id</span></span>
+                                                                                </div>
+                                                                                <div class="options d-block relative">
+                                                                                    <ul class="absolute top-0 left-0 w-full list-none py-4 px-2 hidden dropdown-boxshadow bg-white rounded z-50">
+                                                                                        <li>
+                                                                                            <div class="p-2 d-block">
+                                                                                                <input type="text" name="search" id="input-search"
+                                                                                                    class="bg-no-repeat w-full search-bg-position search-bg py-2 pl-8 pr-8 border rounded focus:outline-none dd-font-size placeholder-gray-500 text-gray-700"
+                                                                                                    placeholder="Search">
+                                                                                            </div>
+                                                                                        </li>
+                                                                                        <li
+                                                                                            class="block rounded font-medium px-3 py-2 hover-E3F6FE text-color-313335 pre-font-size leading-none tracking-normal">
+                                                                                            Asset ID</li>
+                                                                                        <li
+                                                                                            class="block rounded font-medium px-3 py-2 hover-E3F6FE text-color-313335 pre-font-size leading-none tracking-normal">
+                                                                                            Asset Image</li>
+                                                                                        <li
+                                                                                            class="rounded block font-medium px-3 py-2 hover-E3F6FE text-color-313335 pre-font-size leading-none tracking-normal">
+                                                                                            Asset Name</li>
+                                                                                        <li
+                                                                                            class="rounded block font-medium px-3 py-2 hover-E3F6FE text-color-313335 pre-font-size leading-none tracking-normal">
+                                                                                            Asset Status</li>
+                                                                                        <li
+                                                                                            class="rounded block font-medium px-3 py-2 hover-E3F6FE text-color-313335 pre-font-size leading-none tracking-normal">
+                                                                                            Asset Category</li>
+                                                                                        <li
+                                                                                            class="rounded block font-medium px-3 py-2 hover-E3F6FE text-color-313335 pre-font-size leading-none tracking-normal">
+                                                                                            Asset Subcategory</li>
+                                                                                        <li
+                                                                                            class="rounded block font-medium px-3 py-2 hover-E3F6FE text-color-313335 pre-font-size leading-none tracking-normal">
+                                                                                            Last Service Date</li>
+                                                                                        <li
+                                                                                            class="rounded block font-medium px-3 py-2 hover-E3F6FE text-color-313335 pre-font-size leading-none tracking-normal">
+                                                                                            Parent Asset</li>
+                                                                                        <li
+                                                                                            class="rounded block font-medium px-3 py-2 hover-E3F6FE text-color-313335 pre-font-size leading-none tracking-normal">
+                                                                                            Asset Tag</li>
+                                                                                        <li
+                                                                                            class="rounded block font-medium px-3 py-2 hover-E3F6FE text-color-313335 pre-font-size leading-none tracking-normal">
+                                                                                            Location</li>
+                                                                                        <li
+                                                                                            class="rounded block font-medium px-3 py-2 hover-E3F6FE text-color-313335 pre-font-size leading-none tracking-normal">
+                                                                                            Site</li>
+                                                                                        <li
+                                                                                            class="rounded block font-medium px-3 py-2 hover-E3F6FE text-color-313335 pre-font-size leading-none tracking-normal">
+                                                                                            Department</li>
+                                                                                        <li
+                                                                                            class="rounded block font-medium px-3 py-2 hover-E3F6FE text-color-313335 pre-font-size leading-none tracking-normal">
+                                                                                            Manufacture Name</li>
+                                                                                        <li
+                                                                                            class="rounded block font-medium px-3 py-2 hover-E3F6FE text-color-313335 pre-font-size leading-none tracking-normal">
+                                                                                            Suplier Name</li>
+                                                                                        <li
+                                                                                            class="rounded block font-medium px-3 py-2 hover-E3F6FE text-color-313335 pre-font-size leading-none tracking-normal">
+                                                                                            Model Number</li>
+                                                                                    </ul>
+                                                                                </div>
                                                                             </div>
-                                                                        
-                                                        
                                                                         </div>
                                                                         <div class="pl-4 w-2/4 d-block">
-                                                                            <div class="category-name pt-8 d-block">
-                                                                                <h6 class="text-sm font-semibold text-color-2E3032 leading-none tracking-normal pb-3">Asset Type
-                                                                                </h6>
-                                                                                <select
-                                                                                    class="w-full webkit-appearance select-bg-position select-bg leading-none text-black select-height bg-white py-3 pl-4 pr-6 rounded border-1-5 outline-none pre-font-size bg-no-repeat height-45 ">
-                                                                                    <option class="placeholder-gray-500::placeholder">Select Asset Type</option>
-                                                                                    <option>Asset ID</option>
-                                                                                    <option>Asset Image</option>
-                                                                                    <option>Asset Name</option>
-                                                                                    <option>Asset Status</option>
-                                                                                    <option>Asset Category</option>
-                                                                                    <option>Asset Subcategory</option>
-                                                                                    <option>Last Service Date</option>
-                                                                                    <option>Parent Asset</option>
-                                                                                    <option>Asset Tag</option>
-                                                                                    <option>Location</option>
-                                                                                    <option>Site</option>
-                                                                                    <option>Department</option>
-                                                                                    <option>Manufacture Name</option>
-                                                                                    <option>Suplier Name</option>
-                                                                                    <option>Model Number</option>
-                                                                                </select>
+                                                                            <div class="drop-down d-block category-name pt-8">
+                                                                                <h6 class="text-sm font-semibold text-color-2E3032 leading-none tracking-normal pb-3">
+                                                                                    Asset Type</h6>
+                                                                                <div class="selected d-block">
+                                                                                    <span
+                                                                                        class="select-text block border-1-5 rounded w-full py-3 px-4  text-sm focus:outline-none placeholder-gray-500::placeholder bulk-action bg-no-repeat select-bg-position"><span>Select
+                                                                                            Asset Type</span></span>
+                                                                                </div>
+                                                                                <div class="options d-block relative">
+                                                                                    <ul class="absolute top-0 left-0 w-full list-none py-4 px-2 hidden dropdown-boxshadow bg-white rounded z-50">
+                                                                                        <li>
+                                                                                            <div class="p-2 d-block">
+                                                                                                <input type="text" name="search" id="input-search"
+                                                                                                    class="bg-no-repeat w-full search-bg-position search-bg py-2 pl-8 pr-8 border rounded focus:outline-none dd-font-size placeholder-gray-500 text-gray-700"
+                                                                                                    placeholder="Search">
+                                                                                            </div>
+                                                                                        </li>
+                                                                                        <li
+                                                                                            class="block rounded font-medium px-3 py-2 hover-E3F6FE text-color-313335 pre-font-size leading-none tracking-normal">
+                                                                                            Asset ID<span class="value">1</span></li>
+                                                                                        <li
+                                                                                            class="block rounded font-medium px-3 py-2 hover-E3F6FE text-color-313335 pre-font-size leading-none tracking-normal">
+                                                                                            Asset Image<span class="value">2</span></li>
+                                                                                        <li
+                                                                                            class="rounded block font-medium px-3 py-2 hover-E3F6FE text-color-313335 pre-font-size leading-none tracking-normal">
+                                                                                            Asset Name<span class="value">3</span></li>
+                                                                                        <li
+                                                                                            class="rounded block font-medium px-3 py-2 hover-E3F6FE text-color-313335 pre-font-size leading-none tracking-normal">
+                                                                                            Asset Status<span class="value">4</span></li>
+                                                                                        <li
+                                                                                            class="rounded block font-medium px-3 py-2 hover-E3F6FE text-color-313335 pre-font-size leading-none tracking-normal">
+                                                                                            Asset Category<span class="value">5</span></li>
+                                                                                        <li
+                                                                                            class="rounded block font-medium px-3 py-2 hover-E3F6FE text-color-313335 pre-font-size leading-none tracking-normal">
+                                                                                            Asset Subcategory<span class="value">6</span></li>
+                                                                                        <li
+                                                                                            class="rounded block font-medium px-3 py-2 hover-E3F6FE text-color-313335 pre-font-size leading-none tracking-normal">
+                                                                                            Last Service Date<span class="value">7</span></li>
+                                                                                        <li
+                                                                                            class="rounded block font-medium px-3 py-2 hover-E3F6FE text-color-313335 pre-font-size leading-none tracking-normal">
+                                                                                            Parent Asset<span class="value">8</span></li>
+                                                                                        <li
+                                                                                            class="rounded block font-medium px-3 py-2 hover-E3F6FE text-color-313335 pre-font-size leading-none tracking-normal">
+                                                                                            Asset Tag<span class="value">9</span></li>
+                                                                                        <li
+                                                                                            class="rounded block font-medium px-3 py-2 hover-E3F6FE text-color-313335 pre-font-size leading-none tracking-normal">
+                                                                                            Location<span class="value">10</span></li>
+                                                                                        <li
+                                                                                            class="rounded block font-medium px-3 py-2 hover-E3F6FE text-color-313335 pre-font-size leading-none tracking-normal">
+                                                                                            Site<span class="value">11</span></li>
+                                                                                        <li
+                                                                                            class="rounded block font-medium px-3 py-2 hover-E3F6FE text-color-313335 pre-font-size leading-none tracking-normal">
+                                                                                            Department<span class="value">12</span></li>
+                                                                                        <li
+                                                                                            class="rounded block font-medium px-3 py-2 hover-E3F6FE text-color-313335 pre-font-size leading-none tracking-normal">
+                                                                                            Manufacture Name<span class="value">13</span></li>
+                                                                                        <li
+                                                                                            class="rounded block font-medium px-3 py-2 hover-E3F6FE text-color-313335 pre-font-size leading-none tracking-normal">
+                                                                                            Suplier Name<span class="value">14</span></li>
+                                                                                        <li
+                                                                                            class="rounded block font-medium px-3 py-2 hover-E3F6FE text-color-313335 pre-font-size leading-none tracking-normal">
+                                                                                            Model Number<span class="value">15</span></li>
+                                                                                    </ul>
+                                                                                </div>
                                                                             </div>
                                                                             
-                                                                            <div class="category-name pt-8 d-block">
-                                                                                <h6 class="text-sm font-semibold text-color-2E3032 leading-none tracking-normal pb-3">Asset Sub-Categories
-                                                                                </h6>
-                                                                                <select
-                                                                                    class="w-full webkit-appearance select-bg-position select-bg leading-none text-black select-height bg-white py-3 pl-4 pr-6 rounded border-1-5 outline-none pre-font-size bg-no-repeat height-45 ">
-                                                                                    <option class="placeholder-gray-500::placeholder">Select Sub-Categories</option>
-                                                                                    <option>Asset ID</option>
-                                                                                    <option>Asset Image</option>
-                                                                                    <option>Asset Name</option>
-                                                                                    <option>Asset Status</option>
-                                                                                    <option>Asset Category</option>
-                                                                                    <option>Asset Subcategory</option>
-                                                                                    <option>Last Service Date</option>
-                                                                                    <option>Parent Asset</option>
-                                                                                    <option>Asset Tag</option>
-                                                                                    <option>Location</option>
-                                                                                    <option>Site</option>
-                                                                                    <option>Department</option>
-                                                                                    <option>Manufacture Name</option>
-                                                                                    <option>Suplier Name</option>
-                                                                                    <option>Model Number</option>
-                                                                                </select>
+                                                                       <div class="sub-category d-block category-name pt-8">
+                                                                            <h6 class="text-sm font-semibold text-color-2E3032 leading-none tracking-normal pb-3">
+                                                                                Asset Sub-Categories</h6>
+                                                                            <div class="selected d-block">
+                                                                                <span
+                                                                                    class="select-text block border-1-5 rounded w-full py-3 px-4  text-sm focus:outline-none placeholder-gray-500::placeholder bulk-action bg-no-repeat select-bg-position"><span>Select
+                                                                                        Asset Sub-Categories</span></span>
                                                                             </div>
+                                                                            <div class="options d-block relative">
+                                                                                <ul class="absolute top-0 left-0 w-full list-none py-4 px-2 hidden dropdown-boxshadow bg-white rounded z-50">
+                                                                                    <li>
+                                                                                        <div class="p-2 d-block">
+                                                                                            <input type="text" name="search" id="input-search"
+                                                                                                class="bg-no-repeat w-full search-bg-position search-bg py-2 pl-8 pr-8 border rounded focus:outline-none dd-font-size placeholder-gray-500 text-gray-700"
+                                                                                                placeholder="Search">
+                                                                                        </div>
+                                                                                    </li>
+                                                                                    <li
+                                                                                        class="block rounded font-medium px-3 py-2 hover-E3F6FE text-color-313335 pre-font-size leading-none tracking-normal">
+                                                                                        Energy Meter</li>
+                                                                                    <li
+                                                                                        class="block rounded font-medium px-3 py-2 hover-E3F6FE text-color-313335 pre-font-size leading-none tracking-normal">
+                                                                                        Water Meter</li>
+                                                                                    <li
+                                                                                        class="rounded block font-medium px-3 py-2 hover-E3F6FE text-color-313335 pre-font-size leading-none tracking-normal">
+                                                                                        Lighting Systems</li>
+                                                                                    <li
+                                                                                        class="rounded block font-medium px-3 py-2 hover-E3F6FE text-color-313335 pre-font-size leading-none tracking-normal">
+                                                                                        Generators & Transformers</li>
+                                                                                    <li
+                                                                                        class="rounded block font-medium px-3 py-2 hover-E3F6FE text-color-313335 pre-font-size leading-none tracking-normal">
+                                                                                        Distribution Boards</li>
+                                                                                    <li
+                                                                                        class="rounded block font-medium px-3 py-2 hover-E3F6FE text-color-313335 pre-font-size leading-none tracking-normal">
+                                                                                        Switchboards & Switchgears</li>
+                                                                                    <li
+                                                                                        class="rounded block font-medium px-3 py-2 hover-E3F6FE text-color-313335 pre-font-size leading-none tracking-normal">
+                                                                                        Electricity Meters</li>
+                                                                                    <li
+                                                                                        class="rounded block font-medium px-3 py-2 hover-E3F6FE text-color-313335 pre-font-size leading-none tracking-normal">
+                                                                                        Circuit Breakers</li>
+                                                                                    <li
+                                                                                        class="rounded block font-medium px-3 py-2 hover-E3F6FE text-color-313335 pre-font-size leading-none tracking-normal">
+                                                                                        Busbars</li>
+                                                                                    <li
+                                                                                        class="rounded block font-medium px-3 py-2 hover-E3F6FE text-color-313335 pre-font-size leading-none tracking-normal">
+                                                                                        Batteries</li>
+                                                                                    <li
+                                                                                        class="rounded block font-medium px-3 py-2 hover-E3F6FE text-color-313335 pre-font-size leading-none tracking-normal">
+                                                                                        AHU</li>
+                                                                                    <li
+                                                                                        class="rounded block font-medium px-3 py-2 hover-E3F6FE text-color-313335 pre-font-size leading-none tracking-normal">
+                                                                                        Chiller</li>
+                                                                                </ul>
+                                                                            </div>
+                                                                        </div>
                                                                             <div class="category-name d-block pt-8">
                                                                                 <h6 class="text-sm font-semibold text-color-2E3032 leading-none tracking-normal pb-3">
                                                                                     Description</h6>
@@ -1007,34 +1173,66 @@
                                                                 <form action="" method="get" class="form-example relative ">
                                                                     <div class="d-flex">
                                                                         <div class="category-list w-2/4 pr-4 d-block">
-                                                                            <div class="category-name pt-8 d-block">
-                                                                                <h6 class="text-sm font-semibold text-color-2E3032 leading-none tracking-normal pb-3">Site
-                                                                                </h6>
-                                                                                <select
-                                                                                    class="w-full webkit-appearance select-bg-position select-bg leading-none text-black select-height bg-white py-3 pl-4 pr-6 rounded border-1-5 outline-none pre-font-size bg-no-repeat height-45 ">
-                                                                                    <option class="placeholder-gray-500::placeholder">Select Site</option>
-                                                                                    <option>Asset ID</option>
-                                                                                    <option>Asset Image</option>
-                                                                                    <option>Asset Name</option>
-                                                                                    <option>Asset Status</option>
-                                                                                    <option>Asset Category</option>
-                                                                                    <option>Asset Subcategory</option>
-                                                                                    <option>Last Service Date</option>
-                                                                                    <option>Parent Asset</option>
-                                                                                    <option>Asset Tag</option>
-                                                                                    <option>Location</option>
-                                                                                    <option>Site</option>
-                                                                                    <option>Department</option>
-                                                                                    <option>Manufacture Name</option>
-                                                                                    <option>Suplier Name</option>
-                                                                                    <option>Model Number</option>
-                                                                                </select>
+                                                                            <div class="drop-down d-block category-name pt-8">
+                                                                                <h6 class="text-sm font-semibold text-color-2E3032 leading-none tracking-normal pb-3">
+                                                                                    Site</h6>
+                                                                                <div class="selected d-block">
+                                                                                    <span
+                                                                                        class="select-text block border-1-5 rounded w-full py-3 px-4  text-sm focus:outline-none placeholder-gray-500::placeholder bulk-action bg-no-repeat select-bg-position"><span>Select Site</span></span>
+                                                                                </div>
+                                                                                <div class="options d-block relative">
+                                                                                    <ul class="absolute top-0 left-0 w-full list-none py-4 px-2 hidden dropdown-boxshadow bg-white rounded z-50">
+                                                                                        <li>
+                                                                                            <div class="p-2 d-block">
+                                                                                                <input type="text" name="search" id="input-search"
+                                                                                                    class="bg-no-repeat w-full search-bg-position search-bg py-2 pl-8 pr-8 border rounded focus:outline-none dd-font-size placeholder-gray-500 text-gray-700"
+                                                                                                    placeholder="Search">
+                                                                                            </div>
+                                                                                        </li>
+                                                                                        <li
+                                                                                            class="block rounded font-medium px-3 py-2 hover-E3F6FE text-color-313335 pre-font-size leading-none tracking-normal">
+                                                                                            Asset ID<span class="value">1</span></li>
+                                                                                        <li
+                                                                                            class="block rounded font-medium px-3 py-2 hover-E3F6FE text-color-313335 pre-font-size leading-none tracking-normal">
+                                                                                            Asset Image<span class="value">2</span></li>
+                                                                                        <li
+                                                                                            class="rounded block font-medium px-3 py-2 hover-E3F6FE text-color-313335 pre-font-size leading-none tracking-normal">
+                                                                                            Asset Name<span class="value">3</span></li>
+                                                                                        <li
+                                                                                            class="rounded block font-medium px-3 py-2 hover-E3F6FE text-color-313335 pre-font-size leading-none tracking-normal">
+                                                                                            Asset Status<span class="value">4</span></li>
+                                                                                        <li
+                                                                                            class="rounded block font-medium px-3 py-2 hover-E3F6FE text-color-313335 pre-font-size leading-none tracking-normal">
+                                                                                            Asset Category<span class="value">5</span></li>
+                                                                                        <li
+                                                                                            class="rounded block font-medium px-3 py-2 hover-E3F6FE text-color-313335 pre-font-size leading-none tracking-normal">
+                                                                                            Asset Subcategory<span class="value">6</span></li>
+                                                                                        <li class="rounded block font-medium px-3 py-2 hover-E3F6FE text-color-313335 pre-font-size leading-none tracking-normal">
+                                                                                            Last Service Date<span class="value">7</span></li>
+                                                                                        <li class="rounded block font-medium px-3 py-2 hover-E3F6FE text-color-313335 pre-font-size leading-none tracking-normal">
+                                                                                            Parent Asset<span class="value">8</span></li>
+                                                                                        <li class="rounded block font-medium px-3 py-2 hover-E3F6FE text-color-313335 pre-font-size leading-none tracking-normal">
+                                                                                            Asset Tag<span class="value">9</span></li>
+                                                                                        <li class="rounded block font-medium px-3 py-2 hover-E3F6FE text-color-313335 pre-font-size leading-none tracking-normal">
+                                                                                            Location<span class="value">10</span></li>
+                                                                                        <li class="rounded block font-medium px-3 py-2 hover-E3F6FE text-color-313335 pre-font-size leading-none tracking-normal">
+                                                                                            Site<span class="value">11</span></li>
+                                                                                        <li class="rounded block font-medium px-3 py-2 hover-E3F6FE text-color-313335 pre-font-size leading-none tracking-normal">
+                                                                                            Department<span class="value">12</span></li>
+                                                                                        <li class="rounded block font-medium px-3 py-2 hover-E3F6FE text-color-313335 pre-font-size leading-none tracking-normal">
+                                                                                            Manufacture Name<span class="value">13</span></li>
+                                                                                        <li class="rounded block font-medium px-3 py-2 hover-E3F6FE text-color-313335 pre-font-size leading-none tracking-normal">
+                                                                                            Suplier Name<span class="value">14</span></li>
+                                                                                        <li class="rounded block font-medium px-3 py-2 hover-E3F6FE text-color-313335 pre-font-size leading-none tracking-normal">
+                                                                                            Model Number<span class="value">15</span></li>
+                                                                                    </ul>
+                                                                                </div>
                                                                             </div>
-                                                                            <div class="category-name d-block pt-8 relative">
+                                                                            <div class="category-name d-block pt-8 relative verified" >
                                                                                 <h6 class="text-sm font-semibold text-color-2E3032 leading-none tracking-normal pb-3">
                                                                                     QR Code</h6>
                                                                                 <input type="text" name="name"
-                                                                                    class="rounded border-1-5 w-full py-3 px-4  text-black text-sm focus:outline-none placeholder-gray-500::placeholder"
+                                                                                    class="rounded box-shadow-green w-full py-3 px-4  text-black text-sm focus:outline-none placeholder-gray-500::placeholder"
                                                                                     id="name" placeholder="Enter QR Code">
                                                                                 <a href="#" class="rounded leading-none tracking-normal text-white font-medium py-3 px-4 bg-color-0099DA small-font-size cursor-pointer absolute right-7 bottom-7"> Generate QR Code</a>
                                                                             </div>
@@ -1047,29 +1245,73 @@
                                                                                     class="location bg-no-repeat search-bg-position rounded border-1-5 w-full py-3 pr-4 pl-10  text-black text-sm focus:outline-none placeholder-gray-500::placeholder"
                                                                                     id="name" placeholder="Enter Description">
                                                                             </div>
-                                                                            <div class="category-name pt-8 d-block">
-                                                                                <h6 class="text-sm font-semibold text-color-2E3032 leading-none tracking-normal pb-3">Department
-                                                                                </h6>
-                                                                                <select
-                                                                                    class="w-full webkit-appearance select-bg-position select-bg leading-none text-black select-height bg-white py-3 pl-4 pr-6 rounded border-1-5 outline-none pre-font-size bg-no-repeat height-45 ">
-                                                                                    <option class="placeholder-gray-500::placeholder">Select Department</option>
-                                                                                    <option>Asset ID</option>
-                                                                                    <option>Asset Image</option>
-                                                                                    <option>Asset Name</option>
-                                                                                    <option>Asset Status</option>
-                                                                                    <option>Asset Category</option>
-                                                                                    <option>Asset Subcategory</option>
-                                                                                    <option>Last Service Date</option>
-                                                                                    <option>Parent Asset</option>
-                                                                                    <option>Asset Tag</option>
-                                                                                    <option>Location</option>
-                                                                                    <option>Site</option>
-                                                                                    <option>Department</option>
-                                                                                    <option>Manufacture Name</option>
-                                                                                    <option>Suplier Name</option>
-                                                                                    <option>Model Number</option>
-                                                                                </select>
+                                                                             <div class="department d-block category-name pt-8 error-msg relative">
+                                                                            <h6 class="text-sm font-semibold text-color-2E3032 leading-none tracking-normal pb-3">
+                                                                                Department</h6>
+                                                                            <div class="selected d-block">
+                                                                                <span
+                                                                                    class="select-text block box-shadow-red rounded w-full py-3 px-4 text-sm focus:outline-none placeholder-gray-500::placeholder bulk-action bg-no-repeat select-bg-position"><span>Select
+                                                                                        Department</span></span>
                                                                             </div>
+                                                                            <div class="options d-block relative">
+                                                                                <ul class="absolute top-0 left-0 w-full list-none py-4 px-2 hidden dropdown-boxshadow bg-white rounded z-50">
+                                                                                    <li>
+                                                                                        <div class="p-2 d-block">
+                                                                                            <input type="text" name="search" id="input-search"
+                                                                                                class="bg-no-repeat w-full search-bg-position search-bg py-2 pl-8 pr-8 border rounded focus:outline-none dd-font-size placeholder-gray-500 text-gray-700"
+                                                                                                placeholder="Search">
+                                                                                        </div>
+                                                                                    </li>
+                                                                                    <li
+                                                                                        class="block rounded font-medium px-3 py-2 hover-E3F6FE text-color-313335 pre-font-size leading-none tracking-normal">
+                                                                                        Asset ID</li>
+                                                                                    <li
+                                                                                        class="block rounded font-medium px-3 py-2 hover-E3F6FE text-color-313335 pre-font-size leading-none tracking-normal">
+                                                                                        Asset Image</li>
+                                                                                    <li
+                                                                                        class="rounded block font-medium px-3 py-2 hover-E3F6FE text-color-313335 pre-font-size leading-none tracking-normal">
+                                                                                        Asset Name</li>
+                                                                                    <li
+                                                                                        class="rounded block font-medium px-3 py-2 hover-E3F6FE text-color-313335 pre-font-size leading-none tracking-normal">
+                                                                                        Asset Status</li>
+                                                                                    <li
+                                                                                        class="rounded block font-medium px-3 py-2 hover-E3F6FE text-color-313335 pre-font-size leading-none tracking-normal">
+                                                                                        Asset Category</li>
+                                                                                    <li
+                                                                                        class="rounded block font-medium px-3 py-2 hover-E3F6FE text-color-313335 pre-font-size leading-none tracking-normal">
+                                                                                        Asset Subcategory</li>
+                                                                                    <li
+                                                                                        class="rounded block font-medium px-3 py-2 hover-E3F6FE text-color-313335 pre-font-size leading-none tracking-normal">
+                                                                                        Last Service Date</li>
+                                                                                    <li
+                                                                                        class="rounded block font-medium px-3 py-2 hover-E3F6FE text-color-313335 pre-font-size leading-none tracking-normal">
+                                                                                        Parent Asset</li>
+                                                                                    <li
+                                                                                        class="rounded block font-medium px-3 py-2 hover-E3F6FE text-color-313335 pre-font-size leading-none tracking-normal">
+                                                                                        Asset Tag</li>
+                                                                                    <li
+                                                                                        class="rounded block font-medium px-3 py-2 hover-E3F6FE text-color-313335 pre-font-size leading-none tracking-normal">
+                                                                                        Location</li>
+                                                                                    <li
+                                                                                        class="rounded block font-medium px-3 py-2 hover-E3F6FE text-color-313335 pre-font-size leading-none tracking-normal">
+                                                                                        Site</li>
+                                                                                    <li
+                                                                                        class="rounded block font-medium px-3 py-2 hover-E3F6FE text-color-313335 pre-font-size leading-none tracking-normal">
+                                                                                        Department</li>
+                                                                                    <li
+                                                                                        class="rounded block font-medium px-3 py-2 hover-E3F6FE text-color-313335 pre-font-size leading-none tracking-normal">
+                                                                                        Manufacture Name</li>
+                                                                                    <li
+                                                                                        class="rounded block font-medium px-3 py-2 hover-E3F6FE text-color-313335 pre-font-size leading-none tracking-normal">
+                                                                                        Suplier Name</li>
+                                                                                    <li
+                                                                                        class="rounded block font-medium px-3 py-2 hover-E3F6FE text-color-313335 pre-font-size leading-none tracking-normal">
+                                                                                        Model Number</li>
+                                                                                </ul>
+                                                                            </div>
+                                                                            <span class="text-xs leading-none tracking-normal text-color-EB5D50 absolute left-0 bottom-20">Something is wrong.</span>
+                                                                        </div>
+                                                                        
                                                                         </div>
                                                                     </div>
                                                                 </form>
@@ -1084,12 +1326,28 @@
                                                             <form action="" method="get" class="form-example">
                                                                 <div class="d-flex">
                                                                     <div class="category-list w-2/4 pr-4 d-block">
-                                                                        <div class="category-name d-block pt-8">
+                                                                        <div class="drop-down d-block category-name pt-8">
                                                                             <h6 class="text-sm font-semibold text-color-2E3032 leading-none tracking-normal pb-3">
                                                                                 Manufacturer Name</h6>
-                                                                            <input type="text" name="name"
-                                                                                class="rounded border-1-5 w-full py-3 px-4  text-black text-sm focus:outline-none placeholder-gray-500::placeholder"
-                                                                                id="name" placeholder="Enter Manufacturer Name">
+                                                                            <div class="selected d-block">
+                                                                            <span
+                                                                                class="select-text block border-1-5 rounded w-full py-3 px-4 text-sm focus:outline-none placeholder-gray-500::placeholder bulk-action bg-no-repeat select-bg-position"><span>Select
+                                                                                    Site</span></span></div>
+                                                                            <div class="options d-block relative">
+                                                                                <ul class="absolute top-0 left-0 w-full list-none py-4 px-2 hidden dropdown-boxshadow bg-white rounded z-50">
+                                                                                    <li><div class="p-2 d-block">
+                                                                                        <input type="text" name="search" id="input-search"
+                                                                                            class="bg-no-repeat w-full search-bg-position search-bg py-2 pl-8 pr-8 border rounded focus:outline-none dd-font-size placeholder-gray-500 text-gray-700"
+                                                                                            placeholder="Search">
+                                                                                    </div></li>
+                                                                                    <li class="rounded block font-medium px-3 py-2 hover-E3F6FE text-color-313335 pre-font-size leading-none tracking-normal">Schneider Electric<span class="value">1</span></li>
+                                                                                    <li class="rounded block font-medium px-3 py-2 hover-E3F6FE text-color-313335 pre-font-size leading-none tracking-normal">Daikin<span class="value">2</span></li>
+                                                                                    <li class="rounded block font-medium px-3 py-2 hover-E3F6FE text-color-313335 pre-font-size leading-none tracking-normal">Edge Tech<span class="value">3</span></li>
+                                                                                    <li class="rounded block font-medium px-3 py-2 hover-E3F6FE text-color-313335 pre-font-size leading-none tracking-normal">Rotech Pumps<span class="value">4</span></li>
+                                                                                    <li class="rounded block font-medium px-3 py-2 hover-E3F6FE text-color-313335 pre-font-size leading-none tracking-normal">Perkins<span class="value">5</span></li>
+                                                                                    <li class="rounded block font-medium px-3 py-2 hover-E3F6FE text-color-313335 pre-font-size leading-none tracking-normal">Monarch<span class="value">6</span></li>
+                                                                                </ul>
+                                                                            </div>
                                                                         </div>
                                                                         <div class="category-name d-block pt-8">
                                                                             <h6 class="text-sm font-semibold text-color-2E3032 leading-none tracking-normal pb-3">
@@ -1138,12 +1396,13 @@
                                                                                     </span>
                                                                                 </div>
                                                                         </div>
-                                                                        <div class="category-name d-block pt-8">
+                                                                        <div class="category-name d-block pt-8 relative">
                                                                             <h6 class="text-sm font-semibold text-color-2E3032 leading-none tracking-normal pb-3">
                                                                                 Warranty Expiry Date</h6>
                                                                             <input type="date" name="name"
-                                                                                class="date-icon bg-no-repeat select-bg-position rounded border-1-5 w-full py-3 px-4  text-black text-sm focus:outline-none placeholder-gray-500::placeholder"
+                                                                                class="date-icon bg-no-repeat select-bg-position rounded box-shadow-green w-full py-3 px-4  text-black text-sm focus:outline-none placeholder-gray-500::placeholder"
                                                                                 id="name" placeholder="Select Date">
+                                                                            <span class="text-xs leading-none tracking-normal text-color-1ABB97 absolute left-0 bottom-20">Expiry date is verified.</span>
                                                                         </div>
                                                                         
                                                                     </div>
@@ -1184,8 +1443,10 @@
                                                                                 id="name" placeholder="0">
                                                                         </div>
                                                                         <a href="#"
-                                                                            class="cursor-pointer add-btn block pt-11 px-4 pl-8 rounded pre-font-size leading-none text-white mr-4 bg-color-0099DA bg-no-repeat bg-left-center absolute right-7 bottom-12">
+                                                                            class="cursor-pointer add-btn block padding-tb-13 pr-6 pl-10 rounded pre-font-size leading-none text-white mr-4 bg-color-0099DA bg-no-repeat bg-left-center-6 absolute right-170 bottom-32 font-bold">
                                                                             Add Asset</a>
+
+                                                                            
                                                                     </div>
                                                                 </div>
                                                             </form>
