@@ -1,5 +1,7 @@
 //Profile Dropdowm
 jQuery(document).ready(function (e) {
+
+    
     function t(t) {
         e(t).bind("click", function (t) {
             t.preventDefault();
@@ -104,7 +106,7 @@ jQuery(document).ready(function ($) {
             this.$checkAll.html("Select All");
 
             if (checked.length <= 0) {
-                this.$selected_text.html("Asset Status");
+                this.$selected_text.html("O items");
             } else if (checked.length === 1) {
                 this.$selected_text.html(checked.parent("label").text());
             } else if (checked.length === this.$inputs.length) {
@@ -135,7 +137,7 @@ jQuery(document).ready(function ($) {
 
             if (!this.isOpen || forceOpen) {
                 this.isOpen = true;
-                this.$el.addClass("on");
+                this.$el.toggleClass("on");
                 $(document).on("click", function (e) {
                     if (!$(e.target).closest("[data-control]").length) {
                         _this.toggleOpen();
@@ -154,12 +156,21 @@ jQuery(document).ready(function ($) {
         for (var i = 0, length = checkboxesDropdowns.length; i < length; i++) {
             new CheckboxDropdown(checkboxesDropdowns[i]);
         }
+
+        $(".close-btn").click(function () {
+            $(".dropdown").removeClass("on");
+        });
     })(jQuery);
     
 
     $('.modal-toggle').on('click', function (e) {
         e.preventDefault();
         $('.modal').toggleClass('is-visible');
+    });
+
+    $('.sub-modal-open').on('click', function (e) {
+        e.preventDefault();
+        $('.sub-model-content').toggleClass('is-visible');
     });
 
     //Select All table
@@ -337,4 +348,3 @@ jQuery(document).ready(function ($) {
             $(".asset-name .options ul").hide();
     });
 });
-
