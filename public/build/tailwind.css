@@ -17983,12 +17983,24 @@ body {
   width: 92%;
 }
 
+.w-93 {
+  width: 93%;
+}
+
+.w-68 {
+  width: 18rem;
+}
+
 .top-30 {
   top: 1.875rem;
 }
 
 .top-2 {
   top: 2px;
+}
+
+.-top-2 {
+  top: -2px;
 }
 
 .-bottom-20 {
@@ -18089,6 +18101,10 @@ body {
 
 .h-screen-full {
   height: calc(100vh - 255px);
+}
+
+.h-68 {
+  height: calc(100vh - 200px);
 }
 
 .data-table th .dropdown-label:hover .stroke-gray,
@@ -18211,6 +18227,11 @@ body {
   padding-bottom: 9px;
 }
 
+.py-13 {
+  padding-top: 13px;
+  padding-bottom: 13px;
+}
+
 .sort-icon:hover .hidden {
   display: block;
 }
@@ -18256,6 +18277,10 @@ body {
 
 .shadow-3lg {
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.08);
+}
+
+.shadow-4lg {
+  box-shadow:0px 10px 20px rgba(0, 0, 0, 0.12)
 }
 
 .border-right {
@@ -18380,6 +18405,27 @@ body {
 
 .w-74 {
   width: 74%;
+}
+
+.main-category::before {
+  content: '';
+  position: absolute;
+  width: 2px;
+  height: 17px;
+  background-color: #fff;
+  bottom: 2px;
+  left: 44px;
+  z-index: 1;
+}
+
+.sub-category a {
+  padding-left: 1.875rem;
+}
+
+.sub-category a figure {
+  position: absolute;
+  top: -38px;
+  left: 0;
 }
 
 @media (min-width: 640px) {
