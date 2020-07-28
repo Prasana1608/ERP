@@ -18403,10 +18403,6 @@ body {
   margin-left: 16.25rem;
 }
 
-.w-74 {
-  width: 74%;
-}
-
 .main-category::before {
   content: '';
   position: absolute;
