@@ -409,7 +409,7 @@ body {
 }
 
 .shadow-4lg {
-    box-shadow:0px 10px 20px rgba(0, 0, 0, 0.12)
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.12)
 }
 
 .border-right {
@@ -531,6 +531,7 @@ body {
 .ml-64 {
     margin-left: 16.25rem;
 }
+
 .main-category::before {
     content: '';
     position: absolute;
@@ -542,8 +543,8 @@ body {
     z-index: 1;
 }
 
-.sub-category a {
-    padding-left: 1.875rem;
+.table-hover:hover .main-category::before {
+    background-color: #e4f6fe;
 }
 
 .sub-category a figure {
