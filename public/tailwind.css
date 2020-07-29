@@ -308,6 +308,14 @@ body {
     background-color: #0099DA;
 }
 
+.bg-red-1000 {
+    background-color: #FFF0E7;
+}
+
+.bg-green-1100 {
+    background-color: #E2FFF2;
+}
+
 /* color */
 .text-blue-1000 {
     color: #0099DA;
@@ -359,6 +367,10 @@ body {
 .py-13 {
     padding-top: 13px;
     padding-bottom: 13px;
+}
+
+.p-7 {
+    padding: 6px;
 }
 
 .sort-icon:hover .hidden {
@@ -545,6 +557,10 @@ body {
 
 .table-hover:hover .main-category::before {
     background-color: #e4f6fe;
+}
+
+.sub-category a {
+    padding-left: 1.875rem;
 }
 
 .sub-category a figure {

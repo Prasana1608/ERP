@@ -502,9 +502,9 @@
                 <div class="flex items-center justify-between mb-6">
                     <div class="table-view">
                         <h6 class="font-medium leading-none text-xss text-black-200">Assets /
-                            Asset Department
+                            Asset Equipment
                             <h2 class="pt-2 text-2xl font-bold leading-none text-black">
-                                Departments (25)
+                                Asset Equipment (25)
                             </h2>
                     </div>
                 
@@ -532,7 +532,7 @@
                                         stroke-linejoin="round" />
                                 </svg>
                             </figure>
-                            Add Department
+                            Add Equipment
                         </a>
                 
                         <div class="relative button-dropdown">
@@ -570,7 +570,7 @@
                                                 </svg>
                 
                                             </figure>
-                                            <span class="pl-3">Export Department to CSV</span>
+                                            <span class="pl-3">Exports Equipment to CSV</span>
                                         </a>
                                     </li>
                                     <li class="px-2 py-2 list-none rounded-lg bg-blue-1200">
@@ -615,7 +615,7 @@
                                                 fill="#787878" />
                                         </svg></button>
                                     <h3 class="text-2xl font-bold leading-none text-black">
-                                        Add Department</h3>
+                                        Add Equipment</h3>
                                 </div>
                                 <div class="modal-body">
                                     <div class="modal-content">
@@ -626,36 +626,28 @@
                                                     <div class="w-2/4 pr-4 category-list">
                                                         <div class="relative category-name">
                                                             <h6 class="pb-3 text-sm font-semibold leading-none text-gray-800">
-                                                                Department Name
+                                                                Equipment Name
                                                             </h6>
                                                             <input type="text" name="name"
                                                                 class="w-full px-4 py-3 font-medium border rounded text-black-100 text-xss focus:border-blue-400 border-red focus:outline-none placeholder-gray-500::placeholder"
-                                                                id="name" placeholder="Eneter Department Name">
+                                                                id="name" placeholder="Eneter Equipment Name">
                                                                 <span class="absolute left-0 text-xs font-medium -bottom-20 text-red-1000">This field is required.</span>
                                                         </div>
-                
                                                     </div>
                                                     <div class="w-2/4 pl-4">
                                                         <div class="relative category-name">
                                                             <h6 class="pb-3 text-sm font-semibold leading-none text-gray-800">
-                                                                Department Description</h6>
+                                                                Equipment Description</h6>
                                                             <input type="text" name="name"
                                                                 class="w-full px-4 py-3 font-medium border rounded text-black-100 text-xss focus:border-blue-400 border-green focus:outline-none placeholder-gray-500::placeholder"
-                                                                id="name" placeholder="Enter Department Description">
+                                                                id="name" placeholder="Enter Equipment Description">
                                                                 <span class="absolute left-0 text-xs font-medium -bottom-20 text-green-1000">This field is verified.</span>
                                                         </div>
                                                     </div>
                                                 </div>
                                                     <a href="#modal-2"
                                                         class="absolute bottom-0 right-0 flex pt-3 pb-3 pl-3 pr-3 font-semibold leading-none text-white transition bg-no-repeat rounded sub-modal-open focus:outline-none text-xss bg-blue-1000 focus:ouline-none bg-left-center add-btn bg-blue-1100 bg-center-left-0 hover:opacity-75">
-                                                        <figure class="pr-2">
-                                                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                <path d="M7 1V13" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                                                <path d="M13 7L0.999999 7" stroke="white" stroke-width="1.5" stroke-linecap="round"
-                                                                    stroke-linejoin="round" />
-                                                            </svg>
-                                                        </figure>
-                                                        Add Department
+                                                        Save Equipment
                                                     </a>
                 
                                             </form>
@@ -668,9 +660,9 @@
                                                             <img src="images/svg/verified.svg" alt="verified-icon">
                                                         </figure>
                                                         <div class="pl-5 verified-content">
-                                                            <h5 class="text-base font-semibold leading-none text-green-1000">New Asset
+                                                            <h5 class="text-base font-semibold leading-none text-green-1000">New Equipment
                                                                 Created!</h5>
-                                                            <p class="pt-2 text-base font-medium leading-none text-black">Your new asset
+                                                            <p class="pt-2 text-base font-medium leading-none text-black">Your new equipment
                                                                 has been created successfully.</p>
                                                         </div>
                 
@@ -685,13 +677,13 @@
                     </div>
                 </div>
                 <div class="relative w-full overflow-y-scroll h-68 data-table">
-                <div class="relative outer">
-                    <div class="overflow-x-scroll overflow-y-visible w-92 inner">
+                <div class="relative w-full outer">
+                    <div class="overflow-x-scroll overflow-y-visible w-93 inner">
                     <table class="table-fixed">
                         <tbody>
                             <tr class="flex border-b-2 pt-11 hover-table">
                                 <th
-                                    class="flex items-center justify-between w-64 p-3 text-sm font-semibold leading-none text-gray-800">
+                                    class="flex items-center justify-between w-64 p-3 text-sm font-semibold leading-none text-black-1000">
                                     <span class="flex items-center">
                                         <label
                                             class="relative block mb-4 mr-8 text-xl cursor-pointer select-none custom-checkbox">
@@ -699,8 +691,8 @@
                                                 class="absolute w-0 h-0 opacity-0 cursor-pointer checkAll"
                                                 id="selectall" name="checkAll">
                                             <span
-                                                class="absolute top-0 left-0 w-5 h-5 border border-gray-400 rounded checkmark"></span>
-                                        </label> Department Name
+                                                class="absolute left-0 w-5 h-5 border border-gray-400 rounded -top-2 checkmark"></span>
+                                        </label> Equipment Image/Name
                                     </span>
                                     <figure>
                                         <svg width="10" height="8" viewBox="0 0 10 8" fill="none"
@@ -718,8 +710,8 @@
                                     </figure>
                                 </th>
                                 <th
-                                    class="flex items-center w-48 px-4 py-3 text-sm font-semibold leading-none text-gray-800">
-                                    Department ID
+                                    class="flex items-center w-48 px-4 py-3 text-sm font-semibold leading-none text-black-1000">
+                                    Equipment ID
                                     <figure class="pl-2">
                                         <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M9 1L5 5L1 1" stroke="#49494C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
@@ -729,8 +721,8 @@
                                     </figure>
                                 </th>
                                 <th
-                                    class="flex items-center w-64 px-4 py-3 pr-0 text-sm font-semibold leading-none text-gray-800">
-                                    Department Description
+                                    class="flex items-center w-64 px-4 py-3 pr-0 text-sm font-semibold leading-none text-black-1000">
+                                    Equipment Description
                                     <figure class="pr-2 rotate-180">
                                         <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M9 1L5 5L1 1" stroke="#49494C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
@@ -740,8 +732,8 @@
                                     </figure>
                                 </th>
                                 <th
-                                    class="flex items-center justify-between w-56 px-4 py-3 text-sm font-semibold leading-none text-gray-800">
-                                    Assets Under
+                                    class="flex items-center justify-between w-56 px-4 py-3 text-sm font-semibold leading-none text-black-1000">
+                                    Manufacturer Count
                                     <div class="relative dropdown" data-control="checkbox-dropdown">
                                         <label class="cursor-pointer dropdown-label">
                                             <figure>
@@ -761,39 +753,44 @@
                                         </label>
                                     </div>
                                 </th>
-                                
-                                <th
-                                    class="absolute right-0 flex items-center justify-end w-20 text-sm font-semibold leading-none text-gray-800 bg-white border-b border-b-2 shadow-3lg top-2">
+                                <th class="flex items-center justify-between w-40 px-4 py-3 text-sm font-semibold leading-none text-black-1000">
+                                    Model Count
                                     <div class="relative dropdown" data-control="checkbox-dropdown">
-                                        <label class="flex justify-end block p-3 bg-white rounded cursor-pointer dropdown-label">
-                                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M6 1.83334V10.1667" stroke="#939393" stroke-width="2"
-                                                    stroke-miterlimit="10" stroke-linecap="round"
-                                                    stroke-linejoin="round" />
-                                                <path d="M10.1673 6H1.83398" stroke="#939393" stroke-width="2"
-                                                    stroke-miterlimit="10" stroke-linecap="round"
-                                                    stroke-linejoin="round" />
-                                            </svg>
+                                        <label class="cursor-pointer dropdown-label">
+                                            <figure>
+                                                <svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M5.6002 8.00002H4.0002C3.5586 8.00002 3.2002 7.64162 3.2002 7.20002C3.2002 6.75842 3.5586 6.40002 4.0002 6.40002H5.6002C6.0418 6.40002 6.4002 6.75842 6.4002 7.20002C6.4002 7.64162 6.0418 8.00002 5.6002 8.00002Z"
+                                                        fill="#939393" />
+                                                    <path
+                                                        d="M7.19961 4.80001H2.39961C1.95801 4.80001 1.59961 4.44161 1.59961 4.00001C1.59961 3.55841 1.95801 3.20001 2.39961 3.20001H7.19961C7.64121 3.20001 7.99961 3.55841 7.99961 4.00001C7.99961 4.44161 7.64121 4.80001 7.19961 4.80001Z"
+                                                        fill="#939393" />
+                                                    <path
+                                                        d="M8.8 1.6H0.8C0.3584 1.6 0 1.2416 0 0.8C0 0.3584 0.3584 0 0.8 0H8.8C9.2416 0 9.6 0.3584 9.6 0.8C9.6 1.2416 9.2416 1.6 8.8 1.6Z"
+                                                        fill="#939393" />
+                                                </svg>
+                                            </figure>
                                         </label>
                                     </div>
+                                </th>
+                                
+                                <th
+                                    class="absolute right-0 flex w-20 py-5 text-sm font-semibold leading-none bg-white border-b-2 text-black-1000 shadow-3lg">
 
                                 </th>
                             </tr>
                             <tr class="flex border-bottom bg-blue-1200 table-hover">
                                 <td
-                                    class="flex items-center w-64 p-3 font-semibold leading-none text-gray-800 border-r border-right text-xss shadow-3xl">
+                                    class="relative flex items-center w-64 px-3 py-4 font-semibold leading-none border-r text-black-1000 border-right text-xss shadow-3xl main-category" >
                                     <label
                                         class="relative block mb-4 mr-8 text-xl cursor-pointer select-none custom-checkbox">
                                         <input type="checkbox"
                                             class="absolute w-0 h-0 opacity-0 cursor-pointer checkAll regular-checkbox name"
                                             name="name">
                                         <span
-                                            class="absolute top-0 left-0 w-5 h-5 border border-gray-400 rounded checkmark"></span>
+                                            class="absolute left-0 w-5 h-5 border border-gray-400 rounded -top-2 checkmark"></span>
                                     </label>
-                                    <span class="flex items-center ">
-                                        <a href="#">Mechanical</a>
-                                    </span>
+                                        <a href="#">CD Roof Cooling Tower</a>
 
                                 </td>
                                 <td
@@ -807,10 +804,14 @@
                                 </td>
                                 <td
                                     class="flex items-center justify-between w-56 px-4 py-2 pr-4 font-medium leading-none border-right text-xss text-black-200">
-                                07
+                                10
                                 </td>
                                 <td
-                                    class="absolute right-0 flex items-center justify-between w-20 px-2 pr-4 font-medium leading-none bg-white shadow-3lg py-9 text-xss text-black-200 border-bottom">
+                                    class="flex items-center justify-between w-40 px-4 py-2 pr-4 font-medium leading-none border-right text-xss text-black-200">
+                                    03
+                                </td>
+                                <td
+                                    class="absolute right-0 flex items-center justify-between w-20 px-2 pr-4 font-medium leading-none bg-white py-13 shadow-3lg text-xss text-black-200 border-bottom">
                                     <div class="flex items-center justify-end">
                                         <a href="#" class="p-1 rounded hover-bg-blue-1100 icon-list">
                                             <figure>
@@ -910,7 +911,7 @@
 
 
                                                             </figure>
-                                                            <span class="pl-3">Export Department CSV</span>
+                                                            <span class="pl-3">Export Equipment to csv</span>
                                                         </a>
                                                     </li>
                                                 </div>
@@ -921,15 +922,13 @@
                             </tr>
                             <tr class="flex border-bottom bg-blue-1200 table-hover">
                                 <td
-                                    class="flex items-center w-64 p-3 font-semibold leading-none text-gray-800 border-r border-right text-xss shadow-3xl">
+                                    class="relative flex items-center w-64 px-3 py-4 font-semibold leading-none border-r text-black-1000 border-right text-xss shadow-3xl main-category">
                                     <label class="relative block mb-4 mr-8 text-xl cursor-pointer select-none custom-checkbox">
                                         <input type="checkbox" class="absolute w-0 h-0 opacity-0 cursor-pointer checkAll regular-checkbox name"
                                             name="name">
-                                        <span class="absolute top-0 left-0 w-5 h-5 border border-gray-400 rounded checkmark"></span>
+                                        <span class="absolute left-0 w-5 h-5 border border-gray-400 rounded -top-2 checkmark"></span>
                                     </label>
-                                    <span class="flex items-center ">
-                                        <a href="#">Electrical</a>
-                                    </span>
+                                    <a href="#">KTA Passenger Elevator</a>
                             
                                 </td>
                                 <td
@@ -937,14 +936,19 @@
                                     1212438
                                 </td>
                                 <td class="flex items-center w-64 px-6 py-2 font-medium leading-none border-right text-xss text-black-200">
-                                    YLS-P02_CPJF-01
+                                    YLS-FL68_Lift Control Panel
                             
                                 </td>
                                 <td
                                     class="flex items-center justify-between w-56 px-4 py-2 pr-4 font-medium leading-none border-right text-xss text-black-200">
-                                    07
+                                    08
                                 </td>
-                                <td class="absolute right-0 flex items-center justify-between w-20 px-2 pr-4 font-medium leading-none bg-white shadow-3lg py-9 text-xss text-black-200 border-bottom">
+                                <td
+                                    class="flex items-center justify-between w-40 px-4 py-2 pr-4 font-medium leading-none border-right text-xss text-black-200">
+                                    06
+                                </td>
+                                <td
+                                    class="absolute right-0 flex items-center justify-between w-20 px-2 pr-4 font-medium leading-none bg-white py-13 shadow-3lg text-xss text-black-200 border-bottom">
                                     <div class="flex items-center justify-end">
                                         <a href="#" class="p-1 rounded hover-bg-blue-1100 icon-list">
                                             <figure>
@@ -966,12 +970,12 @@
                                                     <g clip-path="url(#clip0)">
                                                         <path
                                                             d="M11.6666 5.25V12.25C11.6666 12.5594 11.5437 12.8562 11.3249 13.075C11.1061 13.2937 10.8094 13.4167 10.5 13.4167H3.49998C3.19056 13.4167 2.89381 13.2937 2.67502 13.075C2.45623 12.8562 2.33331 12.5594 2.33331 12.25V5.25"
-                                                            stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round">
-                                                        </path>
+                                                            stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                                            stroke-linejoin="round"></path>
                                                         <path d="M0.583313 2.91602H13.4166" stroke-width="1.5" stroke-miterlimit="10"
                                                             stroke-linecap="round" stroke-linejoin="round"></path>
-                                                        <path d="M4.66663 2.91634V0.583008H9.33329V2.91634" stroke-width="1.5" stroke-miterlimit="10"
-                                                            stroke-linecap="round" stroke-linejoin="round"></path>
+                                                        <path d="M4.66663 2.91634V0.583008H9.33329V2.91634" stroke-width="1.5"
+                                                            stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
                                                     </g>
                                                     <defs>
                                                         <clipPath id="clip0">
@@ -1002,9 +1006,6 @@
                                             <div class="absolute right-0 z-50 w-56 mt-3 bg-white rounded dropdown-menu shadow-xxs"
                                                 style="display: none;">
                                                 <div class="flex flex-col p-2 border-b-1gray">
-                                                    
-                                                    
-                                                    
                                                     <li class="px-2 py-2 list-none rounded bg-blue-1200">
                                                         <a href="#" class="flex items-center font-medium leading-none text-xss text-black-200">
                                                             <figure><svg width="14" height="14" viewBox="0 0 14 14" fill="none"
@@ -1016,7 +1017,7 @@
                                                                         stroke-linecap="round" stroke-linejoin="round">
                                                                     </path>
                                                                 </svg>
-                                
+                            
                                                             </figure>
                                                             <span class="pl-3">Duplicate</span>
                                                         </a>
@@ -1033,10 +1034,10 @@
                                                                         stroke="#49494C" stroke-width="1.5" stroke-miterlimit="10"
                                                                         stroke-linecap="round" stroke-linejoin="round"></path>
                                                                 </svg>
-                                
-                                
+                            
+                            
                                                             </figure>
-                                                            <span class="pl-3">Export Department to CSV</span>
+                                                            <span class="pl-3">Export Equipment to csv</span>
                                                         </a>
                                                     </li>
                                                 </div>
@@ -1047,15 +1048,13 @@
                             </tr>
                             <tr class="flex border-bottom bg-blue-1200 table-hover">
                                 <td
-                                    class="flex items-center w-64 p-3 font-semibold leading-none text-gray-800 border-r border-right text-xss shadow-3xl">
+                                    class="relative flex items-center w-64 px-3 py-4 font-semibold leading-none border-r text-black-1000 border-right text-xss shadow-3xl main-category">
                                     <label class="relative block mb-4 mr-8 text-xl cursor-pointer select-none custom-checkbox">
                                         <input type="checkbox" class="absolute w-0 h-0 opacity-0 cursor-pointer checkAll regular-checkbox name"
                                             name="name">
-                                        <span class="absolute top-0 left-0 w-5 h-5 border border-gray-400 rounded checkmark"></span>
+                                        <span class="absolute left-0 w-5 h-5 border border-gray-400 rounded -top-2 checkmark"></span>
                                     </label>
-                                    <span class="flex items-center ">
-                                        <a href="#">Plumbing</a>
-                                    </span>
+                                    <a href="#">YLS GF SMF</a>
                             
                                 </td>
                                 <td
@@ -1068,9 +1067,14 @@
                                 </td>
                                 <td
                                     class="flex items-center justify-between w-56 px-4 py-2 pr-4 font-medium leading-none border-right text-xss text-black-200">
-                                20
+                                    15
                                 </td>
-                                <td class="absolute right-0 flex items-center justify-between w-20 px-2 pr-4 font-medium leading-none bg-white shadow-3lg py-9 text-xss text-black-200 border-bottom">
+                                <td
+                                    class="flex items-center justify-between w-40 px-4 py-2 pr-4 font-medium leading-none border-right text-xss text-black-200">
+                                    12
+                                </td>
+                                <td
+                                    class="absolute right-0 flex items-center justify-between w-20 px-2 pr-4 font-medium leading-none bg-white py-13 shadow-3lg text-xss text-black-200 border-bottom">
                                     <div class="flex items-center justify-end">
                                         <a href="#" class="p-1 rounded hover-bg-blue-1100 icon-list">
                                             <figure>
@@ -1092,12 +1096,12 @@
                                                     <g clip-path="url(#clip0)">
                                                         <path
                                                             d="M11.6666 5.25V12.25C11.6666 12.5594 11.5437 12.8562 11.3249 13.075C11.1061 13.2937 10.8094 13.4167 10.5 13.4167H3.49998C3.19056 13.4167 2.89381 13.2937 2.67502 13.075C2.45623 12.8562 2.33331 12.5594 2.33331 12.25V5.25"
-                                                            stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round">
-                                                        </path>
+                                                            stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                                            stroke-linejoin="round"></path>
                                                         <path d="M0.583313 2.91602H13.4166" stroke-width="1.5" stroke-miterlimit="10"
                                                             stroke-linecap="round" stroke-linejoin="round"></path>
-                                                        <path d="M4.66663 2.91634V0.583008H9.33329V2.91634" stroke-width="1.5" stroke-miterlimit="10"
-                                                            stroke-linecap="round" stroke-linejoin="round"></path>
+                                                        <path d="M4.66663 2.91634V0.583008H9.33329V2.91634" stroke-width="1.5"
+                                                            stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
                                                     </g>
                                                     <defs>
                                                         <clipPath id="clip0">
@@ -1128,9 +1132,6 @@
                                             <div class="absolute right-0 z-50 w-56 mt-3 bg-white rounded dropdown-menu shadow-xxs"
                                                 style="display: none;">
                                                 <div class="flex flex-col p-2 border-b-1gray">
-                                                    
-                                                    
-                                                    
                                                     <li class="px-2 py-2 list-none rounded bg-blue-1200">
                                                         <a href="#" class="flex items-center font-medium leading-none text-xss text-black-200">
                                                             <figure><svg width="14" height="14" viewBox="0 0 14 14" fill="none"
@@ -1142,7 +1143,7 @@
                                                                         stroke-linecap="round" stroke-linejoin="round">
                                                                     </path>
                                                                 </svg>
-                                
+                            
                                                             </figure>
                                                             <span class="pl-3">Duplicate</span>
                                                         </a>
@@ -1159,10 +1160,10 @@
                                                                         stroke="#49494C" stroke-width="1.5" stroke-miterlimit="10"
                                                                         stroke-linecap="round" stroke-linejoin="round"></path>
                                                                 </svg>
-                                
-                                
+                            
+                            
                                                             </figure>
-                                                            <span class="pl-3">Export Department to CSV</span>
+                                                            <span class="pl-3">Export Equipment to csv</span>
                                                         </a>
                                                     </li>
                                                 </div>
@@ -1173,15 +1174,13 @@
                             </tr>
                             <tr class="flex border-bottom bg-blue-1200 table-hover">
                                 <td
-                                    class="flex items-center w-64 p-3 font-semibold leading-none text-gray-800 border-r border-right text-xss shadow-3xl">
+                                    class="relative flex items-center w-64 px-3 py-4 font-semibold leading-none border-r text-black-1000 border-right text-xss shadow-3xl main-category">
                                     <label class="relative block mb-4 mr-8 text-xl cursor-pointer select-none custom-checkbox">
                                         <input type="checkbox" class="absolute w-0 h-0 opacity-0 cursor-pointer checkAll regular-checkbox name"
                                             name="name">
-                                        <span class="absolute top-0 left-0 w-5 h-5 border border-gray-400 rounded checkmark"></span>
+                                        <span class="absolute left-0 w-5 h-5 border border-gray-400 rounded -top-2 checkmark"></span>
                                     </label>
-                                    <span class="flex items-center ">
-                                        <a href="#">Fire Safety</a>
-                                    </span>
+                                    <a href="#">YLS CCTV Panel</a>
                             
                                 </td>
                                 <td
@@ -1194,9 +1193,14 @@
                                 </td>
                                 <td
                                     class="flex items-center justify-between w-56 px-4 py-2 pr-4 font-medium leading-none border-right text-xss text-black-200">
-                                    15
+                                    08
                                 </td>
-                                <td class="absolute right-0 flex items-center justify-between w-20 px-2 pr-4 font-medium leading-none bg-white shadow-3lg py-9 text-xss text-black-200 border-bottom">
+                                <td
+                                    class="flex items-center justify-between w-40 px-4 py-2 pr-4 font-medium leading-none border-right text-xss text-black-200">
+                                    05
+                                </td>
+                                <td
+                                    class="absolute right-0 flex items-center justify-between w-20 px-2 pr-4 font-medium leading-none bg-white py-13 shadow-3lg text-xss text-black-200 border-bottom">
                                     <div class="flex items-center justify-end">
                                         <a href="#" class="p-1 rounded hover-bg-blue-1100 icon-list">
                                             <figure>
@@ -1218,12 +1222,12 @@
                                                     <g clip-path="url(#clip0)">
                                                         <path
                                                             d="M11.6666 5.25V12.25C11.6666 12.5594 11.5437 12.8562 11.3249 13.075C11.1061 13.2937 10.8094 13.4167 10.5 13.4167H3.49998C3.19056 13.4167 2.89381 13.2937 2.67502 13.075C2.45623 12.8562 2.33331 12.5594 2.33331 12.25V5.25"
-                                                            stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round">
-                                                        </path>
+                                                            stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                                            stroke-linejoin="round"></path>
                                                         <path d="M0.583313 2.91602H13.4166" stroke-width="1.5" stroke-miterlimit="10"
                                                             stroke-linecap="round" stroke-linejoin="round"></path>
-                                                        <path d="M4.66663 2.91634V0.583008H9.33329V2.91634" stroke-width="1.5" stroke-miterlimit="10"
-                                                            stroke-linecap="round" stroke-linejoin="round"></path>
+                                                        <path d="M4.66663 2.91634V0.583008H9.33329V2.91634" stroke-width="1.5"
+                                                            stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
                                                     </g>
                                                     <defs>
                                                         <clipPath id="clip0">
@@ -1254,9 +1258,6 @@
                                             <div class="absolute right-0 z-50 w-56 mt-3 bg-white rounded dropdown-menu shadow-xxs"
                                                 style="display: none;">
                                                 <div class="flex flex-col p-2 border-b-1gray">
-                                                    
-                                                    
-                                                    
                                                     <li class="px-2 py-2 list-none rounded bg-blue-1200">
                                                         <a href="#" class="flex items-center font-medium leading-none text-xss text-black-200">
                                                             <figure><svg width="14" height="14" viewBox="0 0 14 14" fill="none"
@@ -1268,7 +1269,7 @@
                                                                         stroke-linecap="round" stroke-linejoin="round">
                                                                     </path>
                                                                 </svg>
-                                
+                            
                                                             </figure>
                                                             <span class="pl-3">Duplicate</span>
                                                         </a>
@@ -1285,10 +1286,10 @@
                                                                         stroke="#49494C" stroke-width="1.5" stroke-miterlimit="10"
                                                                         stroke-linecap="round" stroke-linejoin="round"></path>
                                                                 </svg>
-                                
-                                
+                            
+                            
                                                             </figure>
-                                                            <span class="pl-3">Export Department to CSV</span>
+                                                            <span class="pl-3">Export Equipment to csv</span>
                                                         </a>
                                                     </li>
                                                 </div>
@@ -1299,15 +1300,13 @@
                             </tr>
                             <tr class="flex border-bottom bg-blue-1200 table-hover">
                                 <td
-                                    class="flex items-center w-64 p-3 font-semibold leading-none text-gray-800 border-r border-right text-xss shadow-3xl">
+                                    class="relative flex items-center w-64 px-3 py-4 font-semibold leading-none border-r text-black-1000 border-right text-xss shadow-3xl main-category">
                                     <label class="relative block mb-4 mr-8 text-xl cursor-pointer select-none custom-checkbox">
                                         <input type="checkbox" class="absolute w-0 h-0 opacity-0 cursor-pointer checkAll regular-checkbox name"
                                             name="name">
-                                        <span class="absolute top-0 left-0 w-5 h-5 border border-gray-400 rounded checkmark"></span>
+                                        <span class="absolute left-0 w-5 h-5 border border-gray-400 rounded -top-2 checkmark"></span>
                                     </label>
-                                    <span class="flex items-center ">
-                                        <a href="#">Civil</a>
-                                    </span>
+                                    <a href="#">BTU Meter</a>
                             
                                 </td>
                                 <td
@@ -1320,131 +1319,14 @@
                                 </td>
                                 <td
                                     class="flex items-center justify-between w-56 px-4 py-2 pr-4 font-medium leading-none border-right text-xss text-black-200">
-                                    12
-                                </td>
-                            <td class="absolute right-0 flex items-center justify-between w-20 px-2 pr-4 font-medium leading-none bg-white shadow-3lg py-9 text-xss text-black-200 border-bottom">
-                                <div class="flex items-center justify-end">
-                                    <a href="#" class="p-1 rounded hover-bg-blue-1100 icon-list">
-                                        <figure>
-                                            <svg width="14" class="stroke-gray" height="14" viewBox="0 0 14 14" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M11.0833 0.583008L13.4166 2.91634L7.58331 8.74967L4.08331 9.91634L5.24998 6.41634L11.0833 0.583008Z"
-                                                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                                <path
-                                                    d="M12.25 9.91667V12.25C12.25 12.5594 12.1271 12.8562 11.9083 13.075C11.6895 13.2937 11.3927 13.4167 11.0833 13.4167H1.74998C1.44056 13.4167 1.14381 13.2937 0.925022 13.075C0.706229 12.8562 0.583313 12.5594 0.583313 12.25V2.91667C0.583313 2.60725 0.706229 2.3105 0.925022 2.09171C1.14381 1.87292 1.44056 1.75 1.74998 1.75H4.08331"
-                                                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                            </svg>
-                                        </figure>
-                                    </a>
-                                    <a href="#" class="p-1 rounded hover-bg-blue-1100 icon-list">
-                                        <figure>
-                                            <svg width="14" height="14" class="stroke-gray" viewBox="0 0 14 14" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <g clip-path="url(#clip0)">
-                                                    <path
-                                                        d="M11.6666 5.25V12.25C11.6666 12.5594 11.5437 12.8562 11.3249 13.075C11.1061 13.2937 10.8094 13.4167 10.5 13.4167H3.49998C3.19056 13.4167 2.89381 13.2937 2.67502 13.075C2.45623 12.8562 2.33331 12.5594 2.33331 12.25V5.25"
-                                                        stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round">
-                                                    </path>
-                                                    <path d="M0.583313 2.91602H13.4166" stroke-width="1.5" stroke-miterlimit="10"
-                                                        stroke-linecap="round" stroke-linejoin="round"></path>
-                                                    <path d="M4.66663 2.91634V0.583008H9.33329V2.91634" stroke-width="1.5" stroke-miterlimit="10"
-                                                        stroke-linecap="round" stroke-linejoin="round"></path>
-                                                </g>
-                                                <defs>
-                                                    <clipPath id="clip0">
-                                                        <rect width="14" height="14" fill="white"></rect>
-                                                    </clipPath>
-                                                </defs>
-                                            </svg>
-                                        </figure>
-                                    </a>
-                                    <div class="relative button-dropdown">
-                                        <a href="javascript:void(0)" class="dropdown-toggle icon-list">
-                                            <figure class="px-2 py-1 rounded hover-bg-blue-1100">
-                                                <svg width="3" height="14" class="fill-gray-100" viewBox="0 0 3 14" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <g clip-path="url(#clip0)">
-                                                        <circle cx="1.5" cy="2" r="1.5"></circle>
-                                                        <circle cx="1.5" cy="7" r="1.5"></circle>
-                                                        <circle cx="1.5" cy="12" r="1.5"></circle>
-                                                    </g>
-                                                    <defs>
-                                                        <clipPath id="clip0">
-                                                            <rect width="3" height="13" fill="white" transform="translate(0 0.5)"></rect>
-                                                        </clipPath>
-                                                    </defs>
-                                                </svg>
-                                            </figure>
-                                        </a>
-                                        <div class="absolute right-0 z-50 w-56 mt-3 bg-white rounded dropdown-menu shadow-xxs"
-                                            style="display: none;">
-                                            <div class="flex flex-col p-2 border-b-1gray">
-                                                <li class="px-2 py-2 list-none rounded bg-blue-1200">
-                                                    <a href="#" class="flex items-center font-medium leading-none text-xss text-black-200">
-                                                        <figure><svg width="14" height="14" viewBox="0 0 14 14" fill="none"
-                                                                xmlns="http://www.w3.org/2000/svg">
-                                                                <path d="M10 4H1V13H10V4Z" stroke="#49494C" stroke-width="1.5"
-                                                                    stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round">
-                                                                </path>
-                                                                <path d="M3 1H13V11" stroke="#49494C" stroke-width="1.5" stroke-miterlimit="10"
-                                                                    stroke-linecap="round" stroke-linejoin="round">
-                                                                </path>
-                                                            </svg>
-                            
-                                                        </figure>
-                                                        <span class="pl-3">Duplicate</span>
-                                                    </a>
-                                                </li>
-                                                <li class="px-2 py-2 list-none rounded bg-blue-1200">
-                                                    <a href="#" class="flex items-center font-medium leading-none text-xss text-black-200">
-                                                        <figure><svg width="14" height="16" viewBox="0 0 14 16" fill="none"
-                                                                xmlns="http://www.w3.org/2000/svg">
-                                                                <path d="M8.5 1.5V5.5H12.5" stroke="#49494C" stroke-width="1.5"
-                                                                    stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round">
-                                                                </path>
-                                                                <path
-                                                                    d="M8.38462 1H1.5C1.22386 1 1 1.22386 1 1.5V14.5C1 14.7761 1.22386 15 1.5 15H12.5C12.7761 15 13 14.7761 13 14.5V5.66667L8.38462 1Z"
-                                                                    stroke="#49494C" stroke-width="1.5" stroke-miterlimit="10"
-                                                                    stroke-linecap="round" stroke-linejoin="round"></path>
-                                                            </svg>
-                            
-                            
-                                                        </figure>
-                                                        <span class="pl-3">Export Department to CSV</span>
-                                                    </a>
-                                                </li>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </td>
-                            </tr>
-                            <tr class="flex border-bottom bg-blue-1200 table-hover">
-                                <td
-                                    class="flex items-center w-64 p-3 font-semibold leading-none text-gray-800 border-r border-right text-xss shadow-3xl">
-                                    <label class="relative block mb-4 mr-8 text-xl cursor-pointer select-none custom-checkbox">
-                                        <input type="checkbox" class="absolute w-0 h-0 opacity-0 cursor-pointer checkAll regular-checkbox name"
-                                            name="name">
-                                        <span class="absolute top-0 left-0 w-5 h-5 border border-gray-400 rounded checkmark"></span>
-                                    </label>
-                                    <span class="flex items-center ">
-                                        <a href="#">Housekeeping</a>
-                                    </span>
-                            
+                                    10
                                 </td>
                                 <td
-                                    class="flex items-center justify-between w-48 px-4 py-2 pr-4 font-medium leading-none border-right text-xss text-black-200">
-                                    1212438
-                                </td>
-                                <td class="flex items-center w-64 px-6 py-2 font-medium leading-none border-right text-xss text-black-200">
-                                    H_03-Cleaning
+                                    class="flex items-center justify-between w-40 px-4 py-2 pr-4 font-medium leading-none border-right text-xss text-black-200">
+                                    03
                                 </td>
                                 <td
-                                    class="flex items-center justify-between w-56 px-4 py-2 pr-4 font-medium leading-none border-right text-xss text-black-200">
-                                    05
-                                </td>
-                                <td class="absolute right-0 flex items-center justify-between w-20 px-2 pr-4 font-medium leading-none bg-white shadow-3lg py-9 text-xss text-black-200 border-bottom">
+                                    class="absolute right-0 flex items-center justify-between w-20 px-2 pr-4 font-medium leading-none bg-white py-13 shadow-3lg text-xss text-black-200 border-bottom">
                                     <div class="flex items-center justify-end">
                                         <a href="#" class="p-1 rounded hover-bg-blue-1100 icon-list">
                                             <figure>
@@ -1466,12 +1348,12 @@
                                                     <g clip-path="url(#clip0)">
                                                         <path
                                                             d="M11.6666 5.25V12.25C11.6666 12.5594 11.5437 12.8562 11.3249 13.075C11.1061 13.2937 10.8094 13.4167 10.5 13.4167H3.49998C3.19056 13.4167 2.89381 13.2937 2.67502 13.075C2.45623 12.8562 2.33331 12.5594 2.33331 12.25V5.25"
-                                                            stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round">
-                                                        </path>
+                                                            stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                                            stroke-linejoin="round"></path>
                                                         <path d="M0.583313 2.91602H13.4166" stroke-width="1.5" stroke-miterlimit="10"
                                                             stroke-linecap="round" stroke-linejoin="round"></path>
-                                                        <path d="M4.66663 2.91634V0.583008H9.33329V2.91634" stroke-width="1.5" stroke-miterlimit="10"
-                                                            stroke-linecap="round" stroke-linejoin="round"></path>
+                                                        <path d="M4.66663 2.91634V0.583008H9.33329V2.91634" stroke-width="1.5"
+                                                            stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
                                                     </g>
                                                     <defs>
                                                         <clipPath id="clip0">
@@ -1502,9 +1384,6 @@
                                             <div class="absolute right-0 z-50 w-56 mt-3 bg-white rounded dropdown-menu shadow-xxs"
                                                 style="display: none;">
                                                 <div class="flex flex-col p-2 border-b-1gray">
-                                                    
-                                                    
-                                                    
                                                     <li class="px-2 py-2 list-none rounded bg-blue-1200">
                                                         <a href="#" class="flex items-center font-medium leading-none text-xss text-black-200">
                                                             <figure><svg width="14" height="14" viewBox="0 0 14 14" fill="none"
@@ -1516,7 +1395,7 @@
                                                                         stroke-linecap="round" stroke-linejoin="round">
                                                                     </path>
                                                                 </svg>
-                                
+                            
                                                             </figure>
                                                             <span class="pl-3">Duplicate</span>
                                                         </a>
@@ -1533,10 +1412,10 @@
                                                                         stroke="#49494C" stroke-width="1.5" stroke-miterlimit="10"
                                                                         stroke-linecap="round" stroke-linejoin="round"></path>
                                                                 </svg>
-                                
-                                
+                            
+                            
                                                             </figure>
-                                                            <span class="pl-3">Export Department to CSV</span>
+                                                            <span class="pl-3">Export Equipment to csv</span>
                                                         </a>
                                                     </li>
                                                 </div>
@@ -1547,15 +1426,13 @@
                             </tr>
                             <tr class="flex border-bottom bg-blue-1200 table-hover">
                                 <td
-                                    class="flex items-center w-64 p-3 font-semibold leading-none text-gray-800 border-r border-right text-xss shadow-3xl">
+                                    class="relative flex items-center w-64 px-3 py-4 font-semibold leading-none border-r text-black-1000 border-right text-xss shadow-3xl main-category">
                                     <label class="relative block mb-4 mr-8 text-xl cursor-pointer select-none custom-checkbox">
                                         <input type="checkbox" class="absolute w-0 h-0 opacity-0 cursor-pointer checkAll regular-checkbox name"
                                             name="name">
-                                        <span class="absolute top-0 left-0 w-5 h-5 border border-gray-400 rounded checkmark"></span>
+                                        <span class="absolute left-0 w-5 h-5 border border-gray-400 rounded -top-2 checkmark"></span>
                                     </label>
-                                    <span class="flex items-center ">
-                                        <a href="#">IT</a>
-                                    </span>
+                                    <a href="#">Lift Control Panel</a>
                             
                                 </td>
                                 <td
@@ -1563,14 +1440,19 @@
                                     1212438
                                 </td>
                                 <td class="flex items-center w-64 px-6 py-2 font-medium leading-none border-right text-xss text-black-200">
-                                    IT-FL68-Laptops
+                                    YLS-FL68_Lift Control Panel
                             
                                 </td>
                                 <td
                                     class="flex items-center justify-between w-56 px-4 py-2 pr-4 font-medium leading-none border-right text-xss text-black-200">
-                                    05
+                                    18
                                 </td>
-                                <td class="absolute right-0 flex items-center justify-between w-20 px-2 pr-4 font-medium leading-none bg-white shadow-3lg py-9 text-xss text-black-200 border-bottom">
+                                <td
+                                    class="flex items-center justify-between w-40 px-4 py-2 pr-4 font-medium leading-none border-right text-xss text-black-200">
+                                    13
+                                </td>
+                                <td
+                                    class="absolute right-0 flex items-center justify-between w-20 px-2 pr-4 font-medium leading-none bg-white py-13 shadow-3lg text-xss text-black-200 border-bottom">
                                     <div class="flex items-center justify-end">
                                         <a href="#" class="p-1 rounded hover-bg-blue-1100 icon-list">
                                             <figure>
@@ -1592,12 +1474,12 @@
                                                     <g clip-path="url(#clip0)">
                                                         <path
                                                             d="M11.6666 5.25V12.25C11.6666 12.5594 11.5437 12.8562 11.3249 13.075C11.1061 13.2937 10.8094 13.4167 10.5 13.4167H3.49998C3.19056 13.4167 2.89381 13.2937 2.67502 13.075C2.45623 12.8562 2.33331 12.5594 2.33331 12.25V5.25"
-                                                            stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round">
-                                                        </path>
+                                                            stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                                            stroke-linejoin="round"></path>
                                                         <path d="M0.583313 2.91602H13.4166" stroke-width="1.5" stroke-miterlimit="10"
                                                             stroke-linecap="round" stroke-linejoin="round"></path>
-                                                        <path d="M4.66663 2.91634V0.583008H9.33329V2.91634" stroke-width="1.5" stroke-miterlimit="10"
-                                                            stroke-linecap="round" stroke-linejoin="round"></path>
+                                                        <path d="M4.66663 2.91634V0.583008H9.33329V2.91634" stroke-width="1.5"
+                                                            stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
                                                     </g>
                                                     <defs>
                                                         <clipPath id="clip0">
@@ -1628,9 +1510,6 @@
                                             <div class="absolute right-0 z-50 w-56 mt-3 bg-white rounded dropdown-menu shadow-xxs"
                                                 style="display: none;">
                                                 <div class="flex flex-col p-2 border-b-1gray">
-                                                    
-                                                    
-                                                    
                                                     <li class="px-2 py-2 list-none rounded bg-blue-1200">
                                                         <a href="#" class="flex items-center font-medium leading-none text-xss text-black-200">
                                                             <figure><svg width="14" height="14" viewBox="0 0 14 14" fill="none"
@@ -1642,7 +1521,7 @@
                                                                         stroke-linecap="round" stroke-linejoin="round">
                                                                     </path>
                                                                 </svg>
-                                
+                            
                                                             </figure>
                                                             <span class="pl-3">Duplicate</span>
                                                         </a>
@@ -1659,10 +1538,766 @@
                                                                         stroke="#49494C" stroke-width="1.5" stroke-miterlimit="10"
                                                                         stroke-linecap="round" stroke-linejoin="round"></path>
                                                                 </svg>
-                                
-                                
+                            
+                            
                                                             </figure>
-                                                            <span class="pl-3">Export Department to CSV</span>
+                                                            <span class="pl-3">Export Equipment to csv</span>
+                                                        </a>
+                                                    </li>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="flex border-bottom bg-blue-1200 table-hover">
+                                <td
+                                    class="relative flex items-center w-64 px-3 py-4 font-semibold leading-none border-r text-black-1000 border-right text-xss shadow-3xl main-category">
+                                    <label class="relative block mb-4 mr-8 text-xl cursor-pointer select-none custom-checkbox">
+                                        <input type="checkbox" class="absolute w-0 h-0 opacity-0 cursor-pointer checkAll regular-checkbox name"
+                                            name="name">
+                                        <span class="absolute left-0 w-5 h-5 border border-gray-400 rounded -top-2 checkmark"></span>
+                                    </label>
+                                    <a href="#">CD Roof Cooling Tower</a>
+                            
+                                </td>
+                                <td
+                                    class="flex items-center justify-between w-48 px-4 py-2 pr-4 font-medium leading-none border-right text-xss text-black-200">
+                                    1212438
+                                </td>
+                                <td class="flex items-center w-64 px-6 py-2 font-medium leading-none border-right text-xss text-black-200">
+                                    YLS-P02_CPJF-01
+                            
+                                </td>
+                                <td
+                                    class="flex items-center justify-between w-56 px-4 py-2 pr-4 font-medium leading-none border-right text-xss text-black-200">
+                                    20
+                                </td>
+                                <td
+                                    class="flex items-center justify-between w-40 px-4 py-2 pr-4 font-medium leading-none border-right text-xss text-black-200">
+                                    15
+                                </td>
+                                <td
+                                    class="absolute right-0 flex items-center justify-between w-20 px-2 pr-4 font-medium leading-none bg-white py-13 shadow-3lg text-xss text-black-200 border-bottom">
+                                    <div class="flex items-center justify-end">
+                                        <a href="#" class="p-1 rounded hover-bg-blue-1100 icon-list">
+                                            <figure>
+                                                <svg width="14" class="stroke-gray" height="14" viewBox="0 0 14 14" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M11.0833 0.583008L13.4166 2.91634L7.58331 8.74967L4.08331 9.91634L5.24998 6.41634L11.0833 0.583008Z"
+                                                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    <path
+                                                        d="M12.25 9.91667V12.25C12.25 12.5594 12.1271 12.8562 11.9083 13.075C11.6895 13.2937 11.3927 13.4167 11.0833 13.4167H1.74998C1.44056 13.4167 1.14381 13.2937 0.925022 13.075C0.706229 12.8562 0.583313 12.5594 0.583313 12.25V2.91667C0.583313 2.60725 0.706229 2.3105 0.925022 2.09171C1.14381 1.87292 1.44056 1.75 1.74998 1.75H4.08331"
+                                                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                </svg>
+                                            </figure>
+                                        </a>
+                                        <a href="#" class="p-1 rounded hover-bg-blue-1100 icon-list">
+                                            <figure>
+                                                <svg width="14" height="14" class="stroke-gray" viewBox="0 0 14 14" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <g clip-path="url(#clip0)">
+                                                        <path
+                                                            d="M11.6666 5.25V12.25C11.6666 12.5594 11.5437 12.8562 11.3249 13.075C11.1061 13.2937 10.8094 13.4167 10.5 13.4167H3.49998C3.19056 13.4167 2.89381 13.2937 2.67502 13.075C2.45623 12.8562 2.33331 12.5594 2.33331 12.25V5.25"
+                                                            stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                                            stroke-linejoin="round"></path>
+                                                        <path d="M0.583313 2.91602H13.4166" stroke-width="1.5" stroke-miterlimit="10"
+                                                            stroke-linecap="round" stroke-linejoin="round"></path>
+                                                        <path d="M4.66663 2.91634V0.583008H9.33329V2.91634" stroke-width="1.5"
+                                                            stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    </g>
+                                                    <defs>
+                                                        <clipPath id="clip0">
+                                                            <rect width="14" height="14" fill="white"></rect>
+                                                        </clipPath>
+                                                    </defs>
+                                                </svg>
+                                            </figure>
+                                        </a>
+                                        <div class="relative button-dropdown">
+                                            <a href="javascript:void(0)" class="dropdown-toggle icon-list">
+                                                <figure class="px-2 py-1 rounded hover-bg-blue-1100">
+                                                    <svg width="3" height="14" class="fill-gray-100" viewBox="0 0 3 14" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <g clip-path="url(#clip0)">
+                                                            <circle cx="1.5" cy="2" r="1.5"></circle>
+                                                            <circle cx="1.5" cy="7" r="1.5"></circle>
+                                                            <circle cx="1.5" cy="12" r="1.5"></circle>
+                                                        </g>
+                                                        <defs>
+                                                            <clipPath id="clip0">
+                                                                <rect width="3" height="13" fill="white" transform="translate(0 0.5)"></rect>
+                                                            </clipPath>
+                                                        </defs>
+                                                    </svg>
+                                                </figure>
+                                            </a>
+                                            <div class="absolute right-0 z-50 w-56 mt-3 bg-white rounded dropdown-menu shadow-xxs"
+                                                style="display: none;">
+                                                <div class="flex flex-col p-2 border-b-1gray">
+                                                    <li class="px-2 py-2 list-none rounded bg-blue-1200">
+                                                        <a href="#" class="flex items-center font-medium leading-none text-xss text-black-200">
+                                                            <figure><svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                                                    xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M10 4H1V13H10V4Z" stroke="#49494C" stroke-width="1.5"
+                                                                        stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round">
+                                                                    </path>
+                                                                    <path d="M3 1H13V11" stroke="#49494C" stroke-width="1.5" stroke-miterlimit="10"
+                                                                        stroke-linecap="round" stroke-linejoin="round">
+                                                                    </path>
+                                                                </svg>
+                            
+                                                            </figure>
+                                                            <span class="pl-3">Duplicate</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="px-2 py-2 list-none rounded bg-blue-1200">
+                                                        <a href="#" class="flex items-center font-medium leading-none text-xss text-black-200">
+                                                            <figure><svg width="14" height="16" viewBox="0 0 14 16" fill="none"
+                                                                    xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M8.5 1.5V5.5H12.5" stroke="#49494C" stroke-width="1.5"
+                                                                        stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round">
+                                                                    </path>
+                                                                    <path
+                                                                        d="M8.38462 1H1.5C1.22386 1 1 1.22386 1 1.5V14.5C1 14.7761 1.22386 15 1.5 15H12.5C12.7761 15 13 14.7761 13 14.5V5.66667L8.38462 1Z"
+                                                                        stroke="#49494C" stroke-width="1.5" stroke-miterlimit="10"
+                                                                        stroke-linecap="round" stroke-linejoin="round"></path>
+                                                                </svg>
+                            
+                            
+                                                            </figure>
+                                                            <span class="pl-3">Export Equipment to csv</span>
+                                                        </a>
+                                                    </li>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="flex border-bottom bg-blue-1200 table-hover">
+                                <td
+                                    class="relative flex items-center w-64 px-3 py-4 font-semibold leading-none border-r text-black-1000 border-right text-xss shadow-3xl main-category">
+                                    <label class="relative block mb-4 mr-8 text-xl cursor-pointer select-none custom-checkbox">
+                                        <input type="checkbox" class="absolute w-0 h-0 opacity-0 cursor-pointer checkAll regular-checkbox name"
+                                            name="name">
+                                        <span class="absolute left-0 w-5 h-5 border border-gray-400 rounded -top-2 checkmark"></span>
+                                    </label>
+                                    <a href="#">KTA Passenger Elevator</a>
+                            
+                                </td>
+                                <td
+                                    class="flex items-center justify-between w-48 px-4 py-2 pr-4 font-medium leading-none border-right text-xss text-black-200">
+                                    1212438
+                                </td>
+                                <td class="flex items-center w-64 px-6 py-2 font-medium leading-none border-right text-xss text-black-200">
+                                    YLS-FL68_Lift Control Panel
+                            
+                                </td>
+                                <td
+                                    class="flex items-center justify-between w-56 px-4 py-2 pr-4 font-medium leading-none border-right text-xss text-black-200">
+                                    13
+                                </td>
+                                <td
+                                    class="flex items-center justify-between w-40 px-4 py-2 pr-4 font-medium leading-none border-right text-xss text-black-200">
+                                    10
+                                </td>
+                                <td
+                                    class="absolute right-0 flex items-center justify-between w-20 px-2 pr-4 font-medium leading-none bg-white py-13 shadow-3lg text-xss text-black-200 border-bottom">
+                                    <div class="flex items-center justify-end">
+                                        <a href="#" class="p-1 rounded hover-bg-blue-1100 icon-list">
+                                            <figure>
+                                                <svg width="14" class="stroke-gray" height="14" viewBox="0 0 14 14" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M11.0833 0.583008L13.4166 2.91634L7.58331 8.74967L4.08331 9.91634L5.24998 6.41634L11.0833 0.583008Z"
+                                                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    <path
+                                                        d="M12.25 9.91667V12.25C12.25 12.5594 12.1271 12.8562 11.9083 13.075C11.6895 13.2937 11.3927 13.4167 11.0833 13.4167H1.74998C1.44056 13.4167 1.14381 13.2937 0.925022 13.075C0.706229 12.8562 0.583313 12.5594 0.583313 12.25V2.91667C0.583313 2.60725 0.706229 2.3105 0.925022 2.09171C1.14381 1.87292 1.44056 1.75 1.74998 1.75H4.08331"
+                                                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                </svg>
+                                            </figure>
+                                        </a>
+                                        <a href="#" class="p-1 rounded hover-bg-blue-1100 icon-list">
+                                            <figure>
+                                                <svg width="14" height="14" class="stroke-gray" viewBox="0 0 14 14" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <g clip-path="url(#clip0)">
+                                                        <path
+                                                            d="M11.6666 5.25V12.25C11.6666 12.5594 11.5437 12.8562 11.3249 13.075C11.1061 13.2937 10.8094 13.4167 10.5 13.4167H3.49998C3.19056 13.4167 2.89381 13.2937 2.67502 13.075C2.45623 12.8562 2.33331 12.5594 2.33331 12.25V5.25"
+                                                            stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                                            stroke-linejoin="round"></path>
+                                                        <path d="M0.583313 2.91602H13.4166" stroke-width="1.5" stroke-miterlimit="10"
+                                                            stroke-linecap="round" stroke-linejoin="round"></path>
+                                                        <path d="M4.66663 2.91634V0.583008H9.33329V2.91634" stroke-width="1.5"
+                                                            stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    </g>
+                                                    <defs>
+                                                        <clipPath id="clip0">
+                                                            <rect width="14" height="14" fill="white"></rect>
+                                                        </clipPath>
+                                                    </defs>
+                                                </svg>
+                                            </figure>
+                                        </a>
+                                        <div class="relative button-dropdown">
+                                            <a href="javascript:void(0)" class="dropdown-toggle icon-list">
+                                                <figure class="px-2 py-1 rounded hover-bg-blue-1100">
+                                                    <svg width="3" height="14" class="fill-gray-100" viewBox="0 0 3 14" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <g clip-path="url(#clip0)">
+                                                            <circle cx="1.5" cy="2" r="1.5"></circle>
+                                                            <circle cx="1.5" cy="7" r="1.5"></circle>
+                                                            <circle cx="1.5" cy="12" r="1.5"></circle>
+                                                        </g>
+                                                        <defs>
+                                                            <clipPath id="clip0">
+                                                                <rect width="3" height="13" fill="white" transform="translate(0 0.5)"></rect>
+                                                            </clipPath>
+                                                        </defs>
+                                                    </svg>
+                                                </figure>
+                                            </a>
+                                            <div class="absolute right-0 z-50 w-56 mt-3 bg-white rounded dropdown-menu shadow-xxs"
+                                                style="display: none;">
+                                                <div class="flex flex-col p-2 border-b-1gray">
+                                                    <li class="px-2 py-2 list-none rounded bg-blue-1200">
+                                                        <a href="#" class="flex items-center font-medium leading-none text-xss text-black-200">
+                                                            <figure><svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                                                    xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M10 4H1V13H10V4Z" stroke="#49494C" stroke-width="1.5"
+                                                                        stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round">
+                                                                    </path>
+                                                                    <path d="M3 1H13V11" stroke="#49494C" stroke-width="1.5" stroke-miterlimit="10"
+                                                                        stroke-linecap="round" stroke-linejoin="round">
+                                                                    </path>
+                                                                </svg>
+                            
+                                                            </figure>
+                                                            <span class="pl-3">Duplicate</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="px-2 py-2 list-none rounded bg-blue-1200">
+                                                        <a href="#" class="flex items-center font-medium leading-none text-xss text-black-200">
+                                                            <figure><svg width="14" height="16" viewBox="0 0 14 16" fill="none"
+                                                                    xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M8.5 1.5V5.5H12.5" stroke="#49494C" stroke-width="1.5"
+                                                                        stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round">
+                                                                    </path>
+                                                                    <path
+                                                                        d="M8.38462 1H1.5C1.22386 1 1 1.22386 1 1.5V14.5C1 14.7761 1.22386 15 1.5 15H12.5C12.7761 15 13 14.7761 13 14.5V5.66667L8.38462 1Z"
+                                                                        stroke="#49494C" stroke-width="1.5" stroke-miterlimit="10"
+                                                                        stroke-linecap="round" stroke-linejoin="round"></path>
+                                                                </svg>
+                            
+                            
+                                                            </figure>
+                                                            <span class="pl-3">Export Equipment to csv</span>
+                                                        </a>
+                                                    </li>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="flex border-bottom bg-blue-1200 table-hover">
+                                <td
+                                    class="relative flex items-center w-64 px-3 py-4 font-semibold leading-none border-r text-black-1000 border-right text-xss shadow-3xl main-category">
+                                    <label class="relative block mb-4 mr-8 text-xl cursor-pointer select-none custom-checkbox">
+                                        <input type="checkbox" class="absolute w-0 h-0 opacity-0 cursor-pointer checkAll regular-checkbox name"
+                                            name="name">
+                                        <span class="absolute left-0 w-5 h-5 border border-gray-400 rounded -top-2 checkmark"></span>
+                                    </label>
+                                    <a href="#">YLS GF SMF</a>
+                            
+                                </td>
+                                <td
+                                    class="flex items-center justify-between w-48 px-4 py-2 pr-4 font-medium leading-none border-right text-xss text-black-200">
+                                    1212438
+                                </td>
+                                <td class="flex items-center w-64 px-6 py-2 font-medium leading-none border-right text-xss text-black-200">
+                                    YLS-FL62_CPF-01
+                            
+                                </td>
+                                <td
+                                    class="flex items-center justify-between w-56 px-4 py-2 pr-4 font-medium leading-none border-right text-xss text-black-200">
+                                    01
+                                </td>
+                                <td
+                                    class="flex items-center justify-between w-40 px-4 py-2 pr-4 font-medium leading-none border-right text-xss text-black-200">
+                                    01
+                                </td>
+                                <td
+                                    class="absolute right-0 flex items-center justify-between w-20 px-2 pr-4 font-medium leading-none bg-white py-13 shadow-3lg text-xss text-black-200 border-bottom">
+                                    <div class="flex items-center justify-end">
+                                        <a href="#" class="p-1 rounded hover-bg-blue-1100 icon-list">
+                                            <figure>
+                                                <svg width="14" class="stroke-gray" height="14" viewBox="0 0 14 14" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M11.0833 0.583008L13.4166 2.91634L7.58331 8.74967L4.08331 9.91634L5.24998 6.41634L11.0833 0.583008Z"
+                                                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    <path
+                                                        d="M12.25 9.91667V12.25C12.25 12.5594 12.1271 12.8562 11.9083 13.075C11.6895 13.2937 11.3927 13.4167 11.0833 13.4167H1.74998C1.44056 13.4167 1.14381 13.2937 0.925022 13.075C0.706229 12.8562 0.583313 12.5594 0.583313 12.25V2.91667C0.583313 2.60725 0.706229 2.3105 0.925022 2.09171C1.14381 1.87292 1.44056 1.75 1.74998 1.75H4.08331"
+                                                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                </svg>
+                                            </figure>
+                                        </a>
+                                        <a href="#" class="p-1 rounded hover-bg-blue-1100 icon-list">
+                                            <figure>
+                                                <svg width="14" height="14" class="stroke-gray" viewBox="0 0 14 14" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <g clip-path="url(#clip0)">
+                                                        <path
+                                                            d="M11.6666 5.25V12.25C11.6666 12.5594 11.5437 12.8562 11.3249 13.075C11.1061 13.2937 10.8094 13.4167 10.5 13.4167H3.49998C3.19056 13.4167 2.89381 13.2937 2.67502 13.075C2.45623 12.8562 2.33331 12.5594 2.33331 12.25V5.25"
+                                                            stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                                            stroke-linejoin="round"></path>
+                                                        <path d="M0.583313 2.91602H13.4166" stroke-width="1.5" stroke-miterlimit="10"
+                                                            stroke-linecap="round" stroke-linejoin="round"></path>
+                                                        <path d="M4.66663 2.91634V0.583008H9.33329V2.91634" stroke-width="1.5"
+                                                            stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    </g>
+                                                    <defs>
+                                                        <clipPath id="clip0">
+                                                            <rect width="14" height="14" fill="white"></rect>
+                                                        </clipPath>
+                                                    </defs>
+                                                </svg>
+                                            </figure>
+                                        </a>
+                                        <div class="relative button-dropdown">
+                                            <a href="javascript:void(0)" class="dropdown-toggle icon-list">
+                                                <figure class="px-2 py-1 rounded hover-bg-blue-1100">
+                                                    <svg width="3" height="14" class="fill-gray-100" viewBox="0 0 3 14" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <g clip-path="url(#clip0)">
+                                                            <circle cx="1.5" cy="2" r="1.5"></circle>
+                                                            <circle cx="1.5" cy="7" r="1.5"></circle>
+                                                            <circle cx="1.5" cy="12" r="1.5"></circle>
+                                                        </g>
+                                                        <defs>
+                                                            <clipPath id="clip0">
+                                                                <rect width="3" height="13" fill="white" transform="translate(0 0.5)"></rect>
+                                                            </clipPath>
+                                                        </defs>
+                                                    </svg>
+                                                </figure>
+                                            </a>
+                                            <div class="absolute right-0 z-50 w-56 mt-3 bg-white rounded dropdown-menu shadow-xxs"
+                                                style="display: none;">
+                                                <div class="flex flex-col p-2 border-b-1gray">
+                                                    <li class="px-2 py-2 list-none rounded bg-blue-1200">
+                                                        <a href="#" class="flex items-center font-medium leading-none text-xss text-black-200">
+                                                            <figure><svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                                                    xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M10 4H1V13H10V4Z" stroke="#49494C" stroke-width="1.5"
+                                                                        stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round">
+                                                                    </path>
+                                                                    <path d="M3 1H13V11" stroke="#49494C" stroke-width="1.5" stroke-miterlimit="10"
+                                                                        stroke-linecap="round" stroke-linejoin="round">
+                                                                    </path>
+                                                                </svg>
+                            
+                                                            </figure>
+                                                            <span class="pl-3">Duplicate</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="px-2 py-2 list-none rounded bg-blue-1200">
+                                                        <a href="#" class="flex items-center font-medium leading-none text-xss text-black-200">
+                                                            <figure><svg width="14" height="16" viewBox="0 0 14 16" fill="none"
+                                                                    xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M8.5 1.5V5.5H12.5" stroke="#49494C" stroke-width="1.5"
+                                                                        stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round">
+                                                                    </path>
+                                                                    <path
+                                                                        d="M8.38462 1H1.5C1.22386 1 1 1.22386 1 1.5V14.5C1 14.7761 1.22386 15 1.5 15H12.5C12.7761 15 13 14.7761 13 14.5V5.66667L8.38462 1Z"
+                                                                        stroke="#49494C" stroke-width="1.5" stroke-miterlimit="10"
+                                                                        stroke-linecap="round" stroke-linejoin="round"></path>
+                                                                </svg>
+                            
+                            
+                                                            </figure>
+                                                            <span class="pl-3">Export Equipment to csv</span>
+                                                        </a>
+                                                    </li>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="flex border-bottom bg-blue-1200 table-hover">
+                                <td
+                                    class="relative flex items-center w-64 px-3 py-4 font-semibold leading-none border-r text-black-1000 border-right text-xss shadow-3xl main-category">
+                                    <label class="relative block mb-4 mr-8 text-xl cursor-pointer select-none custom-checkbox">
+                                        <input type="checkbox" class="absolute w-0 h-0 opacity-0 cursor-pointer checkAll regular-checkbox name"
+                                            name="name">
+                                        <span class="absolute left-0 w-5 h-5 border border-gray-400 rounded -top-2 checkmark"></span>
+                                    </label>
+                                    <a href="#">YLS CCTV Panel</a>
+                            
+                                </td>
+                                <td
+                                    class="flex items-center justify-between w-48 px-4 py-2 pr-4 font-medium leading-none border-right text-xss text-black-200">
+                                    1212438
+                                </td>
+                                <td class="flex items-center w-64 px-6 py-2 font-medium leading-none border-right text-xss text-black-200">
+                                    JLT-JBC4-MF-03
+                            
+                                </td>
+                                <td
+                                    class="flex items-center justify-between w-56 px-4 py-2 pr-4 font-medium leading-none border-right text-xss text-black-200">
+                                    07
+                                </td>
+                                <td
+                                    class="flex items-center justify-between w-40 px-4 py-2 pr-4 font-medium leading-none border-right text-xss text-black-200">
+                                    05
+                                </td>
+                                <td
+                                    class="absolute right-0 flex items-center justify-between w-20 px-2 pr-4 font-medium leading-none bg-white py-13 shadow-3lg text-xss text-black-200 border-bottom">
+                                    <div class="flex items-center justify-end">
+                                        <a href="#" class="p-1 rounded hover-bg-blue-1100 icon-list">
+                                            <figure>
+                                                <svg width="14" class="stroke-gray" height="14" viewBox="0 0 14 14" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M11.0833 0.583008L13.4166 2.91634L7.58331 8.74967L4.08331 9.91634L5.24998 6.41634L11.0833 0.583008Z"
+                                                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    <path
+                                                        d="M12.25 9.91667V12.25C12.25 12.5594 12.1271 12.8562 11.9083 13.075C11.6895 13.2937 11.3927 13.4167 11.0833 13.4167H1.74998C1.44056 13.4167 1.14381 13.2937 0.925022 13.075C0.706229 12.8562 0.583313 12.5594 0.583313 12.25V2.91667C0.583313 2.60725 0.706229 2.3105 0.925022 2.09171C1.14381 1.87292 1.44056 1.75 1.74998 1.75H4.08331"
+                                                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                </svg>
+                                            </figure>
+                                        </a>
+                                        <a href="#" class="p-1 rounded hover-bg-blue-1100 icon-list">
+                                            <figure>
+                                                <svg width="14" height="14" class="stroke-gray" viewBox="0 0 14 14" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <g clip-path="url(#clip0)">
+                                                        <path
+                                                            d="M11.6666 5.25V12.25C11.6666 12.5594 11.5437 12.8562 11.3249 13.075C11.1061 13.2937 10.8094 13.4167 10.5 13.4167H3.49998C3.19056 13.4167 2.89381 13.2937 2.67502 13.075C2.45623 12.8562 2.33331 12.5594 2.33331 12.25V5.25"
+                                                            stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                                            stroke-linejoin="round"></path>
+                                                        <path d="M0.583313 2.91602H13.4166" stroke-width="1.5" stroke-miterlimit="10"
+                                                            stroke-linecap="round" stroke-linejoin="round"></path>
+                                                        <path d="M4.66663 2.91634V0.583008H9.33329V2.91634" stroke-width="1.5"
+                                                            stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    </g>
+                                                    <defs>
+                                                        <clipPath id="clip0">
+                                                            <rect width="14" height="14" fill="white"></rect>
+                                                        </clipPath>
+                                                    </defs>
+                                                </svg>
+                                            </figure>
+                                        </a>
+                                        <div class="relative button-dropdown">
+                                            <a href="javascript:void(0)" class="dropdown-toggle icon-list">
+                                                <figure class="px-2 py-1 rounded hover-bg-blue-1100">
+                                                    <svg width="3" height="14" class="fill-gray-100" viewBox="0 0 3 14" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <g clip-path="url(#clip0)">
+                                                            <circle cx="1.5" cy="2" r="1.5"></circle>
+                                                            <circle cx="1.5" cy="7" r="1.5"></circle>
+                                                            <circle cx="1.5" cy="12" r="1.5"></circle>
+                                                        </g>
+                                                        <defs>
+                                                            <clipPath id="clip0">
+                                                                <rect width="3" height="13" fill="white" transform="translate(0 0.5)"></rect>
+                                                            </clipPath>
+                                                        </defs>
+                                                    </svg>
+                                                </figure>
+                                            </a>
+                                            <div class="absolute right-0 z-50 w-56 mt-3 bg-white rounded dropdown-menu shadow-xxs"
+                                                style="display: none;">
+                                                <div class="flex flex-col p-2 border-b-1gray">
+                                                    <li class="px-2 py-2 list-none rounded bg-blue-1200">
+                                                        <a href="#" class="flex items-center font-medium leading-none text-xss text-black-200">
+                                                            <figure><svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                                                    xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M10 4H1V13H10V4Z" stroke="#49494C" stroke-width="1.5"
+                                                                        stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round">
+                                                                    </path>
+                                                                    <path d="M3 1H13V11" stroke="#49494C" stroke-width="1.5" stroke-miterlimit="10"
+                                                                        stroke-linecap="round" stroke-linejoin="round">
+                                                                    </path>
+                                                                </svg>
+                            
+                                                            </figure>
+                                                            <span class="pl-3">Duplicate</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="px-2 py-2 list-none rounded bg-blue-1200">
+                                                        <a href="#" class="flex items-center font-medium leading-none text-xss text-black-200">
+                                                            <figure><svg width="14" height="16" viewBox="0 0 14 16" fill="none"
+                                                                    xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M8.5 1.5V5.5H12.5" stroke="#49494C" stroke-width="1.5"
+                                                                        stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round">
+                                                                    </path>
+                                                                    <path
+                                                                        d="M8.38462 1H1.5C1.22386 1 1 1.22386 1 1.5V14.5C1 14.7761 1.22386 15 1.5 15H12.5C12.7761 15 13 14.7761 13 14.5V5.66667L8.38462 1Z"
+                                                                        stroke="#49494C" stroke-width="1.5" stroke-miterlimit="10"
+                                                                        stroke-linecap="round" stroke-linejoin="round"></path>
+                                                                </svg>
+                            
+                            
+                                                            </figure>
+                                                            <span class="pl-3">Export Equipment to csv</span>
+                                                        </a>
+                                                    </li>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="flex border-bottom bg-blue-1200 table-hover">
+                                <td
+                                    class="relative flex items-center w-64 px-3 py-4 font-semibold leading-none border-r text-black-1000 border-right text-xss shadow-3xl main-category">
+                                    <label class="relative block mb-4 mr-8 text-xl cursor-pointer select-none custom-checkbox">
+                                        <input type="checkbox" class="absolute w-0 h-0 opacity-0 cursor-pointer checkAll regular-checkbox name"
+                                            name="name">
+                                        <span class="absolute left-0 w-5 h-5 border border-gray-400 rounded -top-2 checkmark"></span>
+                                    </label>
+                                    <a href="#">BTU Meter</a>
+                            
+                                </td>
+                                <td
+                                    class="flex items-center justify-between w-48 px-4 py-2 pr-4 font-medium leading-none border-right text-xss text-black-200">
+                                    1212438
+                                </td>
+                                <td class="flex items-center w-64 px-6 py-2 font-medium leading-none border-right text-xss text-black-200">
+                                    JLT-JBC4-MF-03
+                            
+                                </td>
+                                <td
+                                    class="flex items-center justify-between w-56 px-4 py-2 pr-4 font-medium leading-none border-right text-xss text-black-200">
+                                    02
+                                </td>
+                                <td
+                                    class="flex items-center justify-between w-40 px-4 py-2 pr-4 font-medium leading-none border-right text-xss text-black-200">
+                                    02
+                                </td>
+                                <td
+                                    class="absolute right-0 flex items-center justify-between w-20 px-2 pr-4 font-medium leading-none bg-white py-13 shadow-3lg text-xss text-black-200 border-bottom">
+                                    <div class="flex items-center justify-end">
+                                        <a href="#" class="p-1 rounded hover-bg-blue-1100 icon-list">
+                                            <figure>
+                                                <svg width="14" class="stroke-gray" height="14" viewBox="0 0 14 14" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M11.0833 0.583008L13.4166 2.91634L7.58331 8.74967L4.08331 9.91634L5.24998 6.41634L11.0833 0.583008Z"
+                                                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    <path
+                                                        d="M12.25 9.91667V12.25C12.25 12.5594 12.1271 12.8562 11.9083 13.075C11.6895 13.2937 11.3927 13.4167 11.0833 13.4167H1.74998C1.44056 13.4167 1.14381 13.2937 0.925022 13.075C0.706229 12.8562 0.583313 12.5594 0.583313 12.25V2.91667C0.583313 2.60725 0.706229 2.3105 0.925022 2.09171C1.14381 1.87292 1.44056 1.75 1.74998 1.75H4.08331"
+                                                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                </svg>
+                                            </figure>
+                                        </a>
+                                        <a href="#" class="p-1 rounded hover-bg-blue-1100 icon-list">
+                                            <figure>
+                                                <svg width="14" height="14" class="stroke-gray" viewBox="0 0 14 14" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <g clip-path="url(#clip0)">
+                                                        <path
+                                                            d="M11.6666 5.25V12.25C11.6666 12.5594 11.5437 12.8562 11.3249 13.075C11.1061 13.2937 10.8094 13.4167 10.5 13.4167H3.49998C3.19056 13.4167 2.89381 13.2937 2.67502 13.075C2.45623 12.8562 2.33331 12.5594 2.33331 12.25V5.25"
+                                                            stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                                            stroke-linejoin="round"></path>
+                                                        <path d="M0.583313 2.91602H13.4166" stroke-width="1.5" stroke-miterlimit="10"
+                                                            stroke-linecap="round" stroke-linejoin="round"></path>
+                                                        <path d="M4.66663 2.91634V0.583008H9.33329V2.91634" stroke-width="1.5"
+                                                            stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    </g>
+                                                    <defs>
+                                                        <clipPath id="clip0">
+                                                            <rect width="14" height="14" fill="white"></rect>
+                                                        </clipPath>
+                                                    </defs>
+                                                </svg>
+                                            </figure>
+                                        </a>
+                                        <div class="relative button-dropdown">
+                                            <a href="javascript:void(0)" class="dropdown-toggle icon-list">
+                                                <figure class="px-2 py-1 rounded hover-bg-blue-1100">
+                                                    <svg width="3" height="14" class="fill-gray-100" viewBox="0 0 3 14" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <g clip-path="url(#clip0)">
+                                                            <circle cx="1.5" cy="2" r="1.5"></circle>
+                                                            <circle cx="1.5" cy="7" r="1.5"></circle>
+                                                            <circle cx="1.5" cy="12" r="1.5"></circle>
+                                                        </g>
+                                                        <defs>
+                                                            <clipPath id="clip0">
+                                                                <rect width="3" height="13" fill="white" transform="translate(0 0.5)"></rect>
+                                                            </clipPath>
+                                                        </defs>
+                                                    </svg>
+                                                </figure>
+                                            </a>
+                                            <div class="absolute right-0 z-50 w-56 mt-3 bg-white rounded dropdown-menu shadow-xxs"
+                                                style="display: none;">
+                                                <div class="flex flex-col p-2 border-b-1gray">
+                                                    <li class="px-2 py-2 list-none rounded bg-blue-1200">
+                                                        <a href="#" class="flex items-center font-medium leading-none text-xss text-black-200">
+                                                            <figure><svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                                                    xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M10 4H1V13H10V4Z" stroke="#49494C" stroke-width="1.5"
+                                                                        stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round">
+                                                                    </path>
+                                                                    <path d="M3 1H13V11" stroke="#49494C" stroke-width="1.5" stroke-miterlimit="10"
+                                                                        stroke-linecap="round" stroke-linejoin="round">
+                                                                    </path>
+                                                                </svg>
+                            
+                                                            </figure>
+                                                            <span class="pl-3">Duplicate</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="px-2 py-2 list-none rounded bg-blue-1200">
+                                                        <a href="#" class="flex items-center font-medium leading-none text-xss text-black-200">
+                                                            <figure><svg width="14" height="16" viewBox="0 0 14 16" fill="none"
+                                                                    xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M8.5 1.5V5.5H12.5" stroke="#49494C" stroke-width="1.5"
+                                                                        stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round">
+                                                                    </path>
+                                                                    <path
+                                                                        d="M8.38462 1H1.5C1.22386 1 1 1.22386 1 1.5V14.5C1 14.7761 1.22386 15 1.5 15H12.5C12.7761 15 13 14.7761 13 14.5V5.66667L8.38462 1Z"
+                                                                        stroke="#49494C" stroke-width="1.5" stroke-miterlimit="10"
+                                                                        stroke-linecap="round" stroke-linejoin="round"></path>
+                                                                </svg>
+                            
+                            
+                                                            </figure>
+                                                            <span class="pl-3">Export Equipment to csv</span>
+                                                        </a>
+                                                    </li>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="flex border-bottom bg-blue-1200 table-hover">
+                                <td
+                                    class="relative flex items-center w-64 px-3 py-4 font-semibold leading-none border-r text-black-1000 border-right text-xss shadow-3xl main-category">
+                                    <label class="relative block mb-4 mr-8 text-xl cursor-pointer select-none custom-checkbox">
+                                        <input type="checkbox" class="absolute w-0 h-0 opacity-0 cursor-pointer checkAll regular-checkbox name"
+                                            name="name">
+                                        <span class="absolute left-0 w-5 h-5 border border-gray-400 rounded -top-2 checkmark"></span>
+                                    </label>
+                                    <a href="#">KTA Passenger Elevator</a>
+                            
+                                </td>
+                                <td
+                                    class="flex items-center justify-between w-48 px-4 py-2 pr-4 font-medium leading-none border-right text-xss text-black-200">
+                                    1212438
+                                </td>
+                                <td class="flex items-center w-64 px-6 py-2 font-medium leading-none border-right text-xss text-black-200">
+                                    JBC_3-LB-Electrical Room
+                            
+                                </td>
+                                <td
+                                    class="flex items-center justify-between w-56 px-4 py-2 pr-4 font-medium leading-none border-right text-xss text-black-200">
+                                    09
+                                </td>
+                                <td
+                                    class="flex items-center justify-between w-40 px-4 py-2 pr-4 font-medium leading-none border-right text-xss text-black-200">
+                                    04
+                                </td>
+                                <td
+                                    class="absolute right-0 flex items-center justify-between w-20 px-2 pr-4 font-medium leading-none bg-white py-13 shadow-3lg text-xss text-black-200 border-bottom">
+                                    <div class="flex items-center justify-end">
+                                        <a href="#" class="p-1 rounded hover-bg-blue-1100 icon-list">
+                                            <figure>
+                                                <svg width="14" class="stroke-gray" height="14" viewBox="0 0 14 14" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M11.0833 0.583008L13.4166 2.91634L7.58331 8.74967L4.08331 9.91634L5.24998 6.41634L11.0833 0.583008Z"
+                                                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    <path
+                                                        d="M12.25 9.91667V12.25C12.25 12.5594 12.1271 12.8562 11.9083 13.075C11.6895 13.2937 11.3927 13.4167 11.0833 13.4167H1.74998C1.44056 13.4167 1.14381 13.2937 0.925022 13.075C0.706229 12.8562 0.583313 12.5594 0.583313 12.25V2.91667C0.583313 2.60725 0.706229 2.3105 0.925022 2.09171C1.14381 1.87292 1.44056 1.75 1.74998 1.75H4.08331"
+                                                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                </svg>
+                                            </figure>
+                                        </a>
+                                        <a href="#" class="p-1 rounded hover-bg-blue-1100 icon-list">
+                                            <figure>
+                                                <svg width="14" height="14" class="stroke-gray" viewBox="0 0 14 14" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <g clip-path="url(#clip0)">
+                                                        <path
+                                                            d="M11.6666 5.25V12.25C11.6666 12.5594 11.5437 12.8562 11.3249 13.075C11.1061 13.2937 10.8094 13.4167 10.5 13.4167H3.49998C3.19056 13.4167 2.89381 13.2937 2.67502 13.075C2.45623 12.8562 2.33331 12.5594 2.33331 12.25V5.25"
+                                                            stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                                            stroke-linejoin="round"></path>
+                                                        <path d="M0.583313 2.91602H13.4166" stroke-width="1.5" stroke-miterlimit="10"
+                                                            stroke-linecap="round" stroke-linejoin="round"></path>
+                                                        <path d="M4.66663 2.91634V0.583008H9.33329V2.91634" stroke-width="1.5"
+                                                            stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    </g>
+                                                    <defs>
+                                                        <clipPath id="clip0">
+                                                            <rect width="14" height="14" fill="white"></rect>
+                                                        </clipPath>
+                                                    </defs>
+                                                </svg>
+                                            </figure>
+                                        </a>
+                                        <div class="relative button-dropdown">
+                                            <a href="javascript:void(0)" class="dropdown-toggle icon-list">
+                                                <figure class="px-2 py-1 rounded hover-bg-blue-1100">
+                                                    <svg width="3" height="14" class="fill-gray-100" viewBox="0 0 3 14" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <g clip-path="url(#clip0)">
+                                                            <circle cx="1.5" cy="2" r="1.5"></circle>
+                                                            <circle cx="1.5" cy="7" r="1.5"></circle>
+                                                            <circle cx="1.5" cy="12" r="1.5"></circle>
+                                                        </g>
+                                                        <defs>
+                                                            <clipPath id="clip0">
+                                                                <rect width="3" height="13" fill="white" transform="translate(0 0.5)"></rect>
+                                                            </clipPath>
+                                                        </defs>
+                                                    </svg>
+                                                </figure>
+                                            </a>
+                                            <div class="absolute right-0 z-50 w-56 mt-3 bg-white rounded dropdown-menu shadow-xxs"
+                                                style="display: none;">
+                                                <div class="flex flex-col p-2 border-b-1gray">
+                                                    <li class="px-2 py-2 list-none rounded bg-blue-1200">
+                                                        <a href="#" class="flex items-center font-medium leading-none text-xss text-black-200">
+                                                            <figure><svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                                                    xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M10 4H1V13H10V4Z" stroke="#49494C" stroke-width="1.5"
+                                                                        stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round">
+                                                                    </path>
+                                                                    <path d="M3 1H13V11" stroke="#49494C" stroke-width="1.5" stroke-miterlimit="10"
+                                                                        stroke-linecap="round" stroke-linejoin="round">
+                                                                    </path>
+                                                                </svg>
+                            
+                                                            </figure>
+                                                            <span class="pl-3">Duplicate</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="px-2 py-2 list-none rounded bg-blue-1200">
+                                                        <a href="#" class="flex items-center font-medium leading-none text-xss text-black-200">
+                                                            <figure><svg width="14" height="16" viewBox="0 0 14 16" fill="none"
+                                                                    xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M8.5 1.5V5.5H12.5" stroke="#49494C" stroke-width="1.5"
+                                                                        stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round">
+                                                                    </path>
+                                                                    <path
+                                                                        d="M8.38462 1H1.5C1.22386 1 1 1.22386 1 1.5V14.5C1 14.7761 1.22386 15 1.5 15H12.5C12.7761 15 13 14.7761 13 14.5V5.66667L8.38462 1Z"
+                                                                        stroke="#49494C" stroke-width="1.5" stroke-miterlimit="10"
+                                                                        stroke-linecap="round" stroke-linejoin="round"></path>
+                                                                </svg>
+                            
+                            
+                                                            </figure>
+                                                            <span class="pl-3">Export Equipment to csv</span>
                                                         </a>
                                                     </li>
                                                 </div>
