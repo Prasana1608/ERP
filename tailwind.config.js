@@ -1,48 +1,65 @@
+
 module.exports = {
   theme: {
+        
+    screens: {
+      'xxl': {'max': '1199px'},
+      // => @media (max-width: 1279px) { ... }
+      'xlg': {'max': '991px'},
+      // => @media (max-width: 1023px) { ... }
+      'xmd': {'max': '767px'},
+      // => @media (max-width: 767px) { ... }
+      'xsm': {'max': '580px'},
+      // => @media (max-width: 639px) { ... }
+    },
+    
+    fontFamily: {
+      'inter': ['inter', 'Arial', 'sans-serif'],
+  },
+  
     extend: {
-      colors: {
-        gray: {
-          '100': '#f5f5f5',
-          '200': '#eeeeee',
-          '300': '#e0e0e0',
-          '400': '#bdbdbd',
-          '500': '#9e9e9e',
-          '600': '#757575',
-          '700': '#616161',
-          '800': '#424242',
-          '900': '#212121',
-        }
+      inset: {
+        '0': 0,
+         auto: 'auto',
+         '50': '50%',
       },
-      spacing: {
-        px: '1px',
-        '0': '0',
-        '1': '0.25rem',
-        '2': '0.5rem',
-        '3': '0.75rem',
-        '4': '1rem',
-        '5': '1.25rem',
-        '6': '1.5rem',
-        '8': '2rem',
-        '10': '2.5rem',
-        '12': '3rem',
-        '16': '4rem',
-        '20': '5rem',
-        '24': '6rem',
-        '32': '8rem',
-        '40': '10rem',
-        '44': '11rem',
-        '48': '12rem',
-        '52': '13rem',
-        '56': '14rem',
-        '64': '16rem',
-        '72': '18rem',
-        '80': '20rem',
-        '88': '22rem',
-        '96': '24rem',
-        '104': '26rem',
-        '112': '28rem',
-        '120': '30rem',
+
+      colors: {
+        blue: {
+          'primary': '#2490EF'
+        },
+        white: {
+          'primary':'',
+          'secondary':'',
+        },
+        gray:{
+          '100': '#F0F0F0',
+          '200':'#EBEEF0',
+          '300':'#F4F5F6',
+          '400': '#A6B1B9',
+        },
+      },
+      height:{
+        '640':'640px',
+            },
+      width:{
+        '18.75': '18.75rem',
+        '1322':'1322px',
+        '1440':'1440px',
+        '1053':'1053px',
+        '1.625':'1.625rem',
+        '1.75':'1.75rem',
+      },
+      margin: {
+        '2.375': '2.375rem',
+        '1.125':'1.125rem',
+       },
+       padding: {
+        '15':'15px',
+       },
+       boxShadow: {
+        xsm: '0px 1px 2px rgba(0, 0, 0, 0.13), 0px 0px 0.5px rgba(0, 0, 0, 0.75)',
+        xmd: '0px 1px 2px rgba(0, 0, 0, 0.13), 0px 0px 0.5px rgba(0, 0, 0, 0.75)',
       },
     }
   },

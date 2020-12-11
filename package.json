@@ -6,7 +6,8 @@
     "start": "npm run serve"
   },
   "dependencies": {
-    "autoprefixer": "^9.5.1",
+    "autoprefixer": "^9.8.5",
+    "postcss": "^7.0.32",
     "tailwindcss": "^1.5.2"
   },
   "devDependencies": {
